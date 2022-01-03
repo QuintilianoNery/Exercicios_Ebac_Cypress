@@ -1,0 +1,23 @@
+{
+  "name": "exercicios_ebac_modulo_11",
+  "version": "1.0.0",
+  "description": "Automação UI com cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuintilianoNery/Exercicios_Ebac_Modulo_11.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QuintilianoNery/Exercicios_Ebac_Modulo_11/issues"
+  },
+  "homepage": "https://github.com/QuintilianoNery/Exercicios_Ebac_Modulo_11#readme",
+  "devDependencies": {
+    "cypress": "^9.2.0"
+  }
+}
