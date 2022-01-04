@@ -2,8 +2,15 @@
 
 //Bloco de funcionalidades 
 context('Funcionalidade Login', () => {
-    it('Deve fazer login com sucessso', () => {
+    beforeEach(() => {
         cy.visit('/')
+    });
+
+    afterEach(() => {
+        cy.screenshot();
+    });
+
+    it('Deve fazer login com sucessso', () => {
         cy.get('i[class="icon-user-unfollow icons"]').click()
         cy.get('input[id="username"]').type(Cypress.env('usuarioEbac'));
         cy.get('input[id="password"]').type(Cypress.env('senhaEbac'));
@@ -15,7 +22,6 @@ context('Funcionalidade Login', () => {
             .should('have.text', 'Welcome aluno_ebac !')
     });
     it('Deve exibir uma mensagem de erro ao insserir um usuário inválido', () => {
-        cy.visit('/')
         cy.get('i[class="icon-user-unfollow icons"]').click()
         cy.get('input[id="username"]').type('a@a.com');
         cy.get('input[id="password"]').type('teste@teste.com');
@@ -29,7 +35,6 @@ context('Funcionalidade Login', () => {
     });
 
     it('Deve exibir uma mensagem de erro ao insserir senha inválida', () => {
-        cy.visit('/')
         cy.get('i[class="icon-user-unfollow icons"]').click()
         cy.get('input[id="username"]').type('aluno_ebac@teste.com');
         cy.get('input[id="password"]').type('senhaInvalida');
