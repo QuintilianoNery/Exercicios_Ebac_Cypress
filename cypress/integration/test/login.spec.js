@@ -48,5 +48,4 @@ context('Funcionalidade Login', () => {
             .should('contain', 'A senha fornecida para o e-mail aluno_ebac@teste.com está incorreta. Perdeu a senha?')
 
     });
-
 });
