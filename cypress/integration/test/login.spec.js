@@ -10,6 +10,7 @@ context('Funcionalidade Login', () => {
         cy.screenshot();
     });
 
+    //Na parte de login, poderia ser criado um comando customizado para ser utilizado em outros testes
     it('Deve fazer login com sucessso', () => {
         cy.get('i[class="icon-user-unfollow icons"]').click()
         cy.get('input[id="username"]').type(Cypress.env('usuarioEbac'));

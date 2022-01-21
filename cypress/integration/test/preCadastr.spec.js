@@ -3,17 +3,23 @@
 //Faker-br
 var faker = require('faker-br');
 
-const email = faker.internet.email()
-const senha = faker.internet.password()
-const numeroAleatorio = faker.random.number({ min: 1, max: 99 })
+//Criação de constantes para os dados do cadastro
 const nome = faker.name.firstName()
+const senha = faker.internet.password()
 const sobreNome = faker.name.lastName()
+const numeroAleatorio = faker.random.number({ min: 1, max: 99 })
+const email = faker.internet.email(nome)
 
-describe('Funcionalidade Pré Cadasstro', () => {
+context('Funcionalidade Pré Cadasstro', () => {
+    //Executar antes de cada teste
     beforeEach(() => {
         cy.visit('/')
     });
 
+    afterEach(() => {
+        cy.screenshot();
+    });
+    //Teste de pré cadastro
     it('Deve completar o pré cadastro com sucessso', () => {
         cy.get('i[class="icon-user-unfollow icons"]').click()
         cy.get('input[id=reg_email]').type((numeroAleatorio) + (email))
@@ -27,7 +33,6 @@ describe('Funcionalidade Pré Cadasstro', () => {
         cy.get('button[name="save_account_details"]').click()
         cy.get('div[class="woocommerce-message"]')
             .should('contain', 'Detalhes da conta modificados com sucesso.')
-
     })
 
 })
