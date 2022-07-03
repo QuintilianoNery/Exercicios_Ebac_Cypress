@@ -1,6 +1,6 @@
 # Nome do workflow
 
-name: DesafioQA
+name: EBAC-MODULO-11
 
 # Comantos de configuração. 
 on:
