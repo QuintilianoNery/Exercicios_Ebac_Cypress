@@ -14,7 +14,7 @@ context('Funcionalidade Login', () => {
     });
 
     //Na parte de login, poderia ser criado um comando customizado para ser utilizado em outros testes
-    it.only('Deve fazer login com sucessso - Usando arquivo de dados', () => {
+    it('Deve fazer login com sucessso - Usando arquivo de dados', () => {
         cy.get('i[class="icon-user-unfollow icons"]').click()
         cy.get('input[id="username"]').type(perfil.usuarioEbac, {log: false});
         cy.get('input[id="password"]').type(perfil.senhaEbac, {log: false});
@@ -56,8 +56,8 @@ context('Funcionalidade Login', () => {
 
     it('Deve exibir uma mensagem de erro ao insserir um usuário inválido', () => {
         cy.get('i[class="icon-user-unfollow icons"]').click()
-        cy.get('input[id="username"]').type('a@a.com');
-        cy.get('input[id="password"]').type('teste@teste.com');
+        cy.get('input[id="username"]').type('a@a.com', {log: false});
+        cy.get('input[id="password"]').type('teste@teste.com', {log: false});
         cy.get('input[id="rememberme"]').click();
         cy.get('input[name="login"]').click();
         //O alerta deve ser exibido
@@ -69,8 +69,8 @@ context('Funcionalidade Login', () => {
 
     it('Deve exibir uma mensagem de erro ao insserir senha inválida', () => {
         cy.get('i[class="icon-user-unfollow icons"]').click()
-        cy.get('input[id="username"]').type('aluno_ebac@teste.com');
-        cy.get('input[id="password"]').type('senhaInvalida');
+        cy.get('input[id="username"]').type('aluno_ebac@teste.com', {log: false});
+        cy.get('input[id="password"]').type('senhaInvalida', {log: false});
         cy.get('input[id="rememberme"]').click();
         cy.get('input[name="login"]').click();
         //O alerta deve ser exibido

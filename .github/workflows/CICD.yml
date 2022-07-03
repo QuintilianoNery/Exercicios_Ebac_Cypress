@@ -7,9 +7,9 @@ on:
   # sempre que tiver um envio para origin ele vai executar estes comandos
     # Gatilhos de execuções, podendo agendar apra um determinado horário
   push:
-    branches: [ origin ]
+    branches: [ master ]
   pull_request:
-    branches: [ origin ]
+    branches: [ master ]
 
   # Abilitar workflow manualmente
   workflow_dispatch:
