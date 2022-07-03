@@ -20,7 +20,7 @@ Na pasta do projeto abra o terminal ou no VSCode use o Ctrl + ' (aspas simples),
 ```shell
 npm init -y
 npm install --yes
-npm install cypress@9.2.0 --save-dev
+npm install cypress -d
 npm i faker-br --dev
 ```
 

@@ -1,12 +1,13 @@
 /// <reference types="cypress" />
 
 var faker = require('faker-br');
-const quantidade = faker.random.number({ min: 1, max: 84 })
+// const quantidade = faker.random.number({ min: 1, max: 4 })
+const quantidade = 3
 
 
 context('Funcionalidade Página de produtos', () => {
     beforeEach(() => {
-        cy.visit('/produtos')
+        cy.visit('/home')
     });
     afterEach(() => {
         cy.screenshot();
@@ -16,17 +17,17 @@ context('Funcionalidade Página de produtos', () => {
     //Então vou continuar o teste de inclusão do produto ao carrinho nesme mesmo teste.
     //em uma futura refatoração, utilizar comandos customizados para diminuir a repetição de código
     // E unir alguns fluxos de testes em um mesmo teste.
-    it.skip('Deve selecionar um produto da lista e adiciona-lo no carrinho', () => {
+    it.only('Deve selecionar um produto da lista e adiciona-lo no carrinho', () => {
         cy.get('div[class="product-block grid"]')
             //.first()
             //.last()
             //.contains('texto aqui')
-            .eq(1)
+            .eq(3)
             .click()
 
-        cy.get('.button-variable-item-L')
+        cy.get('.button-variable-item-33')
             .click()
-        cy.get('.button-variable-item-Black')
+        cy.get('.button-variable-item-Green')
             .click()
 
         cy.get('input[name=quantity]')
@@ -40,10 +41,7 @@ context('Funcionalidade Página de produtos', () => {
             .should('contain', `${quantidade}`)
 
         cy.get('div[class=woocommerce-message]')
-            .should('contain', ` ${quantidade} × “Aero Daily Fitness Tee” foram adicionados no seu carrinho.	`)
+            .should('contain', ` ${quantidade} × “Aether Gym Pant” foram adicionados no seu carrinho.	`)
     });
-
-
-
 
 });
