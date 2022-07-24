@@ -2,11 +2,16 @@ const { defineConfig } = require('cypress')
 
 module.exports = defineConfig({
   websecurity: false,
-  video: false,
+  video: true,
   viewportWidth: 1600,
   viewportHeight: 900,
   chromeWebSecurity: false,
   projectId: 'fpi71k',
+  titulo: "usuarioEBAC",
+  usuarioEbac: "aluno_ebac@teste.com",
+  senhaEbac: "teste@teste.com",
+
+
   e2e: {
     // We've imported your old cypress plugins here.
     // You may want to clean this up later by importing these.
