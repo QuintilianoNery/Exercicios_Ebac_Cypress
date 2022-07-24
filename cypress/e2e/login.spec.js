@@ -7,6 +7,7 @@ const perfil = require('../fixtures/perfil.json');
 context('Funcionalidade Login', () => {
     beforeEach(() => {
         cy.visit('/')
+
     });
 
     afterEach(() => {
