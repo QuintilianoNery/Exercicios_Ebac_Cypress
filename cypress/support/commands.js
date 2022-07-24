@@ -25,11 +25,24 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-
-
 Cypress.Commands.add('login', (usuario, senha) => {
-    cy.get('input[id="username"]').type(usuario);
-    cy.get('input[id="password"]').type(senha);
+    cy.get('input[id="username"]').type(usuario, { log: false });
+    cy.get('input[id="password"]').type(senha, { log: false });
     cy.get('input[id="rememberme"]').click();
     cy.get('input[name="login"]').click();
+})
+
+Cypress.Commands.add('preCadastro', (email, senha, nome, sobreNome) => {
+    cy.get('i[class="icon-user-unfollow icons"]').click()
+    cy.get('input[id=reg_email]').type(email)
+    cy.get('input[id=reg_password]').type(senha)
+    cy.get('input[value=Register]').click()
+    //Ajustar
+    cy.visit('/minha-conta/edit-account/')
+    cy.get('.woocommerce-MyAccount-navigation-link--edit-account > a').clock()
+    cy.get('input[id="account_first_name"]').type(nome)
+    cy.get('input[id="account_last_name"]').type(sobreNome)
+    cy.get('button[name="save_account_details"]').click()
+    cy.get('div[class="woocommerce-message"]')
+        .should('contain', 'Detalhes da conta modificados com sucesso.')
 })
