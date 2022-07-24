@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:open": "npx cypress open ",
-    "cy:run": "npx cypress run --config video=true --env allure=true --browser chrome --record --key eb341f2e-ee7f-4d28-89dd-f69a4776fd5a"
+    "cy:run": "npx cypress run --config video=true --env allure=true --browser chrome --record --key eb341f2e-ee7f-4d28-89dd-f69a4776fd5a",
+    "Cy:open Alure": "npx cypress run --config video=true --env allure=true --browser edge",
+    "cy:allureGenerete": "allure generate allure-results",
+    "cy:allureOpen": "aallure open allure-report"
   },
   "repository": {
     "type": "git",
@@ -20,6 +23,7 @@
   },
   "homepage": "https://github.com/QuintilianoNery/Exercicios_Ebac_Modulo_11#readme",
   "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.28.0",
     "cypress": "^10.3.0",
     "faker-br": "^0.4.1",
     "leite": "^0.2.0"
