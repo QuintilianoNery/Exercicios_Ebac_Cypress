@@ -1,5 +1,56 @@
 {
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "Funcionalidade Login",
+    "children" : [ {
+      "name" : "Deve fazer login com sucessso - Usando cypress.env.json",
+      "uid" : "3654b5c0b0136400",
+      "parentUid" : "d4bed7531f3e23b20bc49952ef599ad2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1658695213583,
+        "stop" : 1658695233095,
+        "duration" : 19512
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "d4bed7531f3e23b20bc49952ef599ad2"
+  }, {
+    "name" : "Funcionalidade Pré Cadasstro",
+    "children" : [ {
+      "name" : "Deve completar o pré cadastro com sucessso",
+      "uid" : "c186baf4627ef2e9",
+      "parentUid" : "a06a8689995127853897fa5e87b697eb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1658695251149,
+        "stop" : 1658695276170,
+        "duration" : 25021
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "a06a8689995127853897fa5e87b697eb"
+  }, {
+    "name" : "Funcionalidade Página de produtos",
+    "children" : [ {
+      "name" : "Deve selecionar um produto da lista e adiciona-lo no carrinho",
+      "uid" : "59d7ee55a6636ce4",
+      "parentUid" : "36dfd847c79960cd366e358cb914bb3a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1658695297578,
+        "stop" : 1658695325391,
+        "duration" : 27813
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "36dfd847c79960cd366e358cb914bb3a"
+  } ],
   "name" : "suites"
 }
