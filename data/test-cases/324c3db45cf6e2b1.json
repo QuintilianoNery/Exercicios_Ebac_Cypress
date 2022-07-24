@@ -1,12 +1,12 @@
 {
-  "uid" : "3654b5c0b0136400",
+  "uid" : "324c3db45cf6e2b1",
   "name" : "Deve fazer login com sucessso - Usando cypress.env.json",
   "fullName" : "Deve fazer login com sucessso - Usando cypress.env.json",
   "historyId" : "db7576ed728bc2ea21990a54576d72bc",
   "time" : {
-    "start" : 1658695213583,
-    "stop" : 1658695233095,
-    "duration" : 19512
+    "start" : 1658702355170,
+    "stop" : 1658702369401,
+    "duration" : 14231
   },
   "status" : "passed",
   "flaky" : false,
@@ -17,17 +17,17 @@
     "steps" : [ {
       "name" : "\"before each\" hook",
       "time" : {
-        "start" : 1658695213585,
-        "stop" : 1658695226099,
-        "duration" : 12514
+        "start" : 1658702355173,
+        "stop" : 1658702364534,
+        "duration" : 9361
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "visit /",
         "time" : {
-          "start" : 1658695213623,
-          "stop" : 1658695226097,
-          "duration" : 12474
+          "start" : 1658702355202,
+          "stop" : 1658702364531,
+          "duration" : 9329
         },
         "status" : "passed",
         "steps" : [ ],
@@ -40,8 +40,8 @@
       }, {
         "name" : "POST 200 /?wc-ajax=get_refreshed_fragments",
         "time" : {
-          "start" : 1658695226097,
-          "stop" : 1658695226097,
+          "start" : 1658702364530,
+          "stop" : 1658702364530,
           "duration" : 0
         },
         "status" : "passed",
@@ -62,9 +62,9 @@
     }, {
       "name" : "get i[class=\"icon-user-unfollow icons\"]",
       "time" : {
-        "start" : 1658695226108,
-        "stop" : 1658695226135,
-        "duration" : 27
+        "start" : 1658702364538,
+        "stop" : 1658702364552,
+        "duration" : 14
       },
       "status" : "passed",
       "steps" : [ ],
@@ -77,9 +77,9 @@
     }, {
       "name" : "click",
       "time" : {
-        "start" : 1658695226135,
-        "stop" : 1658695226508,
-        "duration" : 373
+        "start" : 1658702364552,
+        "stop" : 1658702364799,
+        "duration" : 247
       },
       "status" : "passed",
       "steps" : [ ],
@@ -92,9 +92,9 @@
     }, {
       "name" : "page load --waiting for new page to load--",
       "time" : {
-        "start" : 1658695226507,
-        "stop" : 1658695226508,
-        "duration" : 1
+        "start" : 1658702364799,
+        "stop" : 1658702364799,
+        "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
@@ -107,9 +107,9 @@
     }, {
       "name" : "new url http://lojaebac.ebaconline.art.br/minha-conta/",
       "time" : {
-        "start" : 1658695226508,
-        "stop" : 1658695227930,
-        "duration" : 1422
+        "start" : 1658702364799,
+        "stop" : 1658702365825,
+        "duration" : 1026
       },
       "status" : "passed",
       "steps" : [ ],
@@ -122,8 +122,8 @@
     }, {
       "name" : "get input[id=\"username\"]",
       "time" : {
-        "start" : 1658695227930,
-        "stop" : 1658695227930,
+        "start" : 1658702365825,
+        "stop" : 1658702365825,
         "duration" : 0
       },
       "status" : "passed",
@@ -137,9 +137,9 @@
     }, {
       "name" : "type aluno_ebac@teste.com",
       "time" : {
-        "start" : 1658695227930,
-        "stop" : 1658695228581,
-        "duration" : 651
+        "start" : 1658702365825,
+        "stop" : 1658702366378,
+        "duration" : 553
       },
       "status" : "passed",
       "steps" : [ ],
@@ -152,9 +152,9 @@
     }, {
       "name" : "get input[id=\"password\"]",
       "time" : {
-        "start" : 1658695228581,
-        "stop" : 1658695228597,
-        "duration" : 16
+        "start" : 1658702366378,
+        "stop" : 1658702366384,
+        "duration" : 6
       },
       "status" : "passed",
       "steps" : [ ],
@@ -167,9 +167,9 @@
     }, {
       "name" : "type teste@teste.com",
       "time" : {
-        "start" : 1658695228597,
-        "stop" : 1658695229308,
-        "duration" : 711
+        "start" : 1658702366384,
+        "stop" : 1658702366988,
+        "duration" : 604
       },
       "status" : "passed",
       "steps" : [ ],
@@ -182,9 +182,9 @@
     }, {
       "name" : "get input[id=\"rememberme\"]",
       "time" : {
-        "start" : 1658695229308,
-        "stop" : 1658695229316,
-        "duration" : 8
+        "start" : 1658702366988,
+        "stop" : 1658702366998,
+        "duration" : 10
       },
       "status" : "passed",
       "steps" : [ ],
@@ -197,9 +197,9 @@
     }, {
       "name" : "click",
       "time" : {
-        "start" : 1658695229316,
-        "stop" : 1658695229538,
-        "duration" : 222
+        "start" : 1658702366998,
+        "stop" : 1658702367200,
+        "duration" : 202
       },
       "status" : "passed",
       "steps" : [ ],
@@ -212,8 +212,8 @@
     }, {
       "name" : "get input[name=\"login\"]",
       "time" : {
-        "start" : 1658695229538,
-        "stop" : 1658695229553,
+        "start" : 1658702367200,
+        "stop" : 1658702367215,
         "duration" : 15
       },
       "status" : "passed",
@@ -227,9 +227,9 @@
     }, {
       "name" : "click",
       "time" : {
-        "start" : 1658695229553,
-        "stop" : 1658695229807,
-        "duration" : 254
+        "start" : 1658702367216,
+        "stop" : 1658702367405,
+        "duration" : 189
       },
       "status" : "passed",
       "steps" : [ ],
@@ -242,8 +242,8 @@
     }, {
       "name" : "form sub --submitting form--",
       "time" : {
-        "start" : 1658695229807,
-        "stop" : 1658695229807,
+        "start" : 1658702367405,
+        "stop" : 1658702367405,
         "duration" : 0
       },
       "status" : "passed",
@@ -257,8 +257,8 @@
     }, {
       "name" : "page load --waiting for new page to load--",
       "time" : {
-        "start" : 1658695229807,
-        "stop" : 1658695229807,
+        "start" : 1658702367405,
+        "stop" : 1658702367405,
         "duration" : 0
       },
       "status" : "passed",
@@ -272,9 +272,9 @@
     }, {
       "name" : "url",
       "time" : {
-        "start" : 1658695229807,
-        "stop" : 1658695233075,
-        "duration" : 3268
+        "start" : 1658702367405,
+        "stop" : 1658702369388,
+        "duration" : 1983
       },
       "status" : "passed",
       "steps" : [ ],
@@ -287,8 +287,8 @@
     }, {
       "name" : "assert expected **http://lojaebac.ebaconline.art.br/minha-conta/** to equal **http://lojaebac.ebaconline.art.br/minha-conta/**",
       "time" : {
-        "start" : 1658695233074,
-        "stop" : 1658695233074,
+        "start" : 1658702369387,
+        "stop" : 1658702369387,
         "duration" : 0
       },
       "status" : "passed",
@@ -308,9 +308,9 @@
     }, {
       "name" : "get span[class=\"hidden-xs\"]",
       "time" : {
-        "start" : 1658695233075,
-        "stop" : 1658695233094,
-        "duration" : 19
+        "start" : 1658702369388,
+        "stop" : 1658702369401,
+        "duration" : 13
       },
       "status" : "passed",
       "steps" : [ ],
@@ -323,8 +323,8 @@
     }, {
       "name" : "assert expected **<span.hidden-xs>** to have text **Welcome aluno_ebac !**",
       "time" : {
-        "start" : 1658695233094,
-        "stop" : 1658695233094,
+        "start" : 1658702369401,
+        "stop" : 1658702369401,
         "duration" : 0
       },
       "status" : "passed",
@@ -344,17 +344,17 @@
     }, {
       "name" : "\"after each\" hook",
       "time" : {
-        "start" : 1658695233176,
-        "stop" : 1658695234190,
-        "duration" : 1014
+        "start" : 1658702369468,
+        "stop" : 1658702370363,
+        "duration" : 895
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "screenshot",
         "time" : {
-          "start" : 1658695233178,
-          "stop" : 1658695234186,
-          "duration" : 1008
+          "start" : 1658702369469,
+          "stop" : 1658702370360,
+          "duration" : 891
         },
         "status" : "passed",
         "steps" : [ ],
@@ -373,9 +373,9 @@
       "hasContent" : true
     } ],
     "attachments" : [ {
-      "uid" : "993f80ddb139538c",
-      "name" : "cypress/e2e/login.spec.js:2022-07-24T20:40:33.568Z",
-      "source" : "993f80ddb139538c.png",
+      "uid" : "aa27d83b7e7dbb9f",
+      "name" : "cypress/e2e/login.spec.js:2022-07-24T22:39:29.802Z",
+      "source" : "aa27d83b7e7dbb9f.png",
       "type" : "image/png",
       "size" : 89635
     } ],
@@ -403,6 +403,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "3654b5c0b0136400.json",
+  "source" : "324c3db45cf6e2b1.json",
   "parameterValues" : [ ]
 }

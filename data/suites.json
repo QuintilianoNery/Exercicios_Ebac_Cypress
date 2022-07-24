@@ -1,16 +1,33 @@
 {
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
   "children" : [ {
+    "name" : "Funcionalidade Endereços - Faturamento e Entrega",
+    "children" : [ {
+      "name" : "Deve fazer cadastro de faturamento com sucesso",
+      "uid" : "3d064b0ee8ef2356",
+      "parentUid" : "08618982288f7cc98252c0dfdbe189bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1658702330403,
+        "stop" : 1658702347241,
+        "duration" : 16838
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "08618982288f7cc98252c0dfdbe189bd"
+  }, {
     "name" : "Funcionalidade Login",
     "children" : [ {
       "name" : "Deve fazer login com sucessso - Usando cypress.env.json",
-      "uid" : "3654b5c0b0136400",
+      "uid" : "324c3db45cf6e2b1",
       "parentUid" : "d4bed7531f3e23b20bc49952ef599ad2",
       "status" : "passed",
       "time" : {
-        "start" : 1658695213583,
-        "stop" : 1658695233095,
-        "duration" : 19512
+        "start" : 1658702355170,
+        "stop" : 1658702369401,
+        "duration" : 14231
       },
       "flaky" : false,
       "newFailed" : false,
@@ -20,14 +37,14 @@
   }, {
     "name" : "Funcionalidade Pré Cadasstro",
     "children" : [ {
-      "name" : "Deve completar o pré cadastro com sucessso",
-      "uid" : "c186baf4627ef2e9",
+      "name" : "Deve completar o pré-cadastro com sucesso usando Comandos customizados",
+      "uid" : "869135109f71771f",
       "parentUid" : "a06a8689995127853897fa5e87b697eb",
       "status" : "passed",
       "time" : {
-        "start" : 1658695251149,
-        "stop" : 1658695276170,
-        "duration" : 25021
+        "start" : 1658702382668,
+        "stop" : 1658702403583,
+        "duration" : 20915
       },
       "flaky" : false,
       "newFailed" : false,
@@ -38,13 +55,13 @@
     "name" : "Funcionalidade Página de produtos",
     "children" : [ {
       "name" : "Deve selecionar um produto da lista e adiciona-lo no carrinho",
-      "uid" : "59d7ee55a6636ce4",
+      "uid" : "5f1f560a96f1e2a3",
       "parentUid" : "36dfd847c79960cd366e358cb914bb3a",
       "status" : "passed",
       "time" : {
-        "start" : 1658695297578,
-        "stop" : 1658695325391,
-        "duration" : 27813
+        "start" : 1658702420306,
+        "stop" : 1658702442518,
+        "duration" : 22212
       },
       "flaky" : false,
       "newFailed" : false,

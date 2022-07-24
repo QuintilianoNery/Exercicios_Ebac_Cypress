@@ -1,40 +1,53 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "children" : [ {
-    "name" : "Deve fazer login com sucessso - Usando cypress.env.json",
-    "uid" : "3654b5c0b0136400",
+    "name" : "Deve fazer cadastro de faturamento com sucesso",
+    "uid" : "3d064b0ee8ef2356",
     "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
     "status" : "passed",
     "time" : {
-      "start" : 1658695213583,
-      "stop" : 1658695233095,
-      "duration" : 19512
+      "start" : 1658702330403,
+      "stop" : 1658702347241,
+      "duration" : 16838
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
-    "name" : "Deve completar o pré cadastro com sucessso",
-    "uid" : "c186baf4627ef2e9",
+    "name" : "Deve completar o pré-cadastro com sucesso usando Comandos customizados",
+    "uid" : "869135109f71771f",
     "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
     "status" : "passed",
     "time" : {
-      "start" : 1658695251149,
-      "stop" : 1658695276170,
-      "duration" : 25021
+      "start" : 1658702382668,
+      "stop" : 1658702403583,
+      "duration" : 20915
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Deve fazer login com sucessso - Usando cypress.env.json",
+    "uid" : "324c3db45cf6e2b1",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1658702355170,
+      "stop" : 1658702369401,
+      "duration" : 14231
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Deve selecionar um produto da lista e adiciona-lo no carrinho",
-    "uid" : "59d7ee55a6636ce4",
+    "uid" : "5f1f560a96f1e2a3",
     "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
     "status" : "passed",
     "time" : {
-      "start" : 1658695297578,
-      "stop" : 1658695325391,
-      "duration" : 27813
+      "start" : 1658702420306,
+      "stop" : 1658702442518,
+      "duration" : 22212
     },
     "flaky" : false,
     "newFailed" : false,

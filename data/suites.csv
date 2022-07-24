@@ -1,4 +1,5 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Sun Jul 24 20:40:13 GMT 2022","Sun Jul 24 20:40:33 GMT 2022","19512","","Funcionalidade Login","","","","Deve fazer login com sucessso - Usando cypress.env.json",""
-"passed","Sun Jul 24 20:41:37 GMT 2022","Sun Jul 24 20:42:05 GMT 2022","27813","","Funcionalidade Página de produtos","","","","Deve selecionar um produto da lista e adiciona-lo no carrinho",""
-"passed","Sun Jul 24 20:40:51 GMT 2022","Sun Jul 24 20:41:16 GMT 2022","25021","","Funcionalidade Pré Cadasstro","","","","Deve completar o pré cadastro com sucessso",""
+"passed","Sun Jul 24 22:39:15 GMT 2022","Sun Jul 24 22:39:29 GMT 2022","14231","","Funcionalidade Login","","","","Deve fazer login com sucessso - Usando cypress.env.json",""
+"passed","Sun Jul 24 22:39:42 GMT 2022","Sun Jul 24 22:40:03 GMT 2022","20915","","Funcionalidade Pré Cadasstro","","","","Deve completar o pré-cadastro com sucesso usando Comandos customizados",""
+"passed","Sun Jul 24 22:40:20 GMT 2022","Sun Jul 24 22:40:42 GMT 2022","22212","","Funcionalidade Página de produtos","","","","Deve selecionar um produto da lista e adiciona-lo no carrinho",""
+"passed","Sun Jul 24 22:38:50 GMT 2022","Sun Jul 24 22:39:07 GMT 2022","16838","","Funcionalidade Endereços - Faturamento e Entrega","","","","Deve fazer cadastro de faturamento com sucesso",""
