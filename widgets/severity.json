@@ -1,40 +1,40 @@
 [ {
-  "uid" : "324c3db45cf6e2b1",
-  "name" : "Deve fazer login com sucessso - Usando cypress.env.json",
-  "time" : {
-    "start" : 1658702355170,
-    "stop" : 1658702369401,
-    "duration" : 14231
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "5f1f560a96f1e2a3",
+  "uid" : "d03a84c8e4a67314",
   "name" : "Deve selecionar um produto da lista e adiciona-lo no carrinho",
   "time" : {
-    "start" : 1658702420306,
-    "stop" : 1658702442518,
-    "duration" : 22212
+    "start" : 1660070233486,
+    "stop" : 1660070253435,
+    "duration" : 19949
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "869135109f71771f",
-  "name" : "Deve completar o pré-cadastro com sucesso usando Comandos customizados",
-  "time" : {
-    "start" : 1658702382668,
-    "stop" : 1658702403583,
-    "duration" : 20915
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "3d064b0ee8ef2356",
+  "uid" : "d155dcd1a73fc6ba",
   "name" : "Deve fazer cadastro de faturamento com sucesso",
   "time" : {
-    "start" : 1658702330403,
-    "stop" : 1658702347241,
-    "duration" : 16838
+    "start" : 1660070159510,
+    "stop" : 1660070173004,
+    "duration" : 13494
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8c7d8c3ec7305edd",
+  "name" : "Deve fazer login com sucessso - Usando cypress.env.json",
+  "time" : {
+    "start" : 1660070179753,
+    "stop" : 1660070192488,
+    "duration" : 12735
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "35a67d7e00a2da9a",
+  "name" : "Deve completar o pré-cadastro com sucesso usando Comandos customizados",
+  "time" : {
+    "start" : 1660070204416,
+    "stop" : 1660070220828,
+    "duration" : 16412
   },
   "status" : "passed",
   "severity" : "normal"

@@ -1,12 +1,12 @@
 {
-  "uid" : "5f1f560a96f1e2a3",
+  "uid" : "d03a84c8e4a67314",
   "name" : "Deve selecionar um produto da lista e adiciona-lo no carrinho",
   "fullName" : "Deve selecionar um produto da lista e adiciona-lo no carrinho",
   "historyId" : "9eb256176c9ea3d34078ba153e8c9ded",
   "time" : {
-    "start" : 1658702420306,
-    "stop" : 1658702442518,
-    "duration" : 22212
+    "start" : 1660070233486,
+    "stop" : 1660070253435,
+    "duration" : 19949
   },
   "status" : "passed",
   "flaky" : false,
@@ -17,17 +17,17 @@
     "steps" : [ {
       "name" : "\"before each\" hook",
       "time" : {
-        "start" : 1658702420308,
-        "stop" : 1658702431254,
-        "duration" : 10946
+        "start" : 1660070233488,
+        "stop" : 1660070242836,
+        "duration" : 9348
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "visit /home -> 301: http://lojaebac.ebaconline.art.br/home/",
         "time" : {
-          "start" : 1658702420332,
-          "stop" : 1658702431253,
-          "duration" : 10921
+          "start" : 1660070233512,
+          "stop" : 1660070242835,
+          "duration" : 9323
         },
         "status" : "passed",
         "steps" : [ ],
@@ -40,9 +40,9 @@
       }, {
         "name" : "POST 200 /?wc-ajax=get_refreshed_fragments",
         "time" : {
-          "start" : 1658702431253,
-          "stop" : 1658702431253,
-          "duration" : 0
+          "start" : 1660070242834,
+          "stop" : 1660070242835,
+          "duration" : 1
         },
         "status" : "passed",
         "steps" : [ ],
@@ -53,10 +53,10 @@
         "shouldDisplayMessage" : false,
         "hasContent" : false
       }, {
-        "name" : "POST 200 /wp-admin/admin-ajax.php",
+        "name" : "POST /wp-admin/admin-ajax.php",
         "time" : {
-          "start" : 1658702431253,
-          "stop" : 1658702431253,
+          "start" : 1660070242835,
+          "stop" : 1660070242835,
           "duration" : 0
         },
         "status" : "passed",
@@ -77,9 +77,9 @@
     }, {
       "name" : "get div[class=\"product-block grid\"]",
       "time" : {
-        "start" : 1658702431258,
-        "stop" : 1658702431292,
-        "duration" : 34
+        "start" : 1660070242840,
+        "stop" : 1660070242889,
+        "duration" : 49
       },
       "status" : "passed",
       "steps" : [ ],
@@ -92,9 +92,9 @@
     }, {
       "name" : "eq 3",
       "time" : {
-        "start" : 1658702431292,
-        "stop" : 1658702431302,
-        "duration" : 10
+        "start" : 1660070242889,
+        "stop" : 1660070242898,
+        "duration" : 9
       },
       "status" : "passed",
       "steps" : [ ],
@@ -107,9 +107,9 @@
     }, {
       "name" : "click",
       "time" : {
-        "start" : 1658702431302,
-        "stop" : 1658702431729,
-        "duration" : 427
+        "start" : 1660070242898,
+        "stop" : 1660070243400,
+        "duration" : 502
       },
       "status" : "passed",
       "steps" : [ ],
@@ -122,8 +122,8 @@
     }, {
       "name" : "page load --waiting for new page to load--",
       "time" : {
-        "start" : 1658702431729,
-        "stop" : 1658702431729,
+        "start" : 1660070243399,
+        "stop" : 1660070243399,
         "duration" : 0
       },
       "status" : "passed",
@@ -137,9 +137,9 @@
     }, {
       "name" : "new url http://lojaebac.ebaconline.art.br/product/aether-gym-pant/",
       "time" : {
-        "start" : 1658702431729,
-        "stop" : 1658702436087,
-        "duration" : 4358
+        "start" : 1660070243400,
+        "stop" : 1660070247044,
+        "duration" : 3644
       },
       "status" : "passed",
       "steps" : [ ],
@@ -152,8 +152,8 @@
     }, {
       "name" : "GET 200 https://s7.addthis.com/l10n/client.pt.min.json",
       "time" : {
-        "start" : 1658702436085,
-        "stop" : 1658702436085,
+        "start" : 1660070247043,
+        "stop" : 1660070247043,
         "duration" : 0
       },
       "status" : "passed",
@@ -167,8 +167,8 @@
     }, {
       "name" : "POST 200 /wp-admin/admin-ajax.php",
       "time" : {
-        "start" : 1658702436085,
-        "stop" : 1658702436085,
+        "start" : 1660070247043,
+        "stop" : 1660070247043,
         "duration" : 0
       },
       "status" : "passed",
@@ -182,8 +182,8 @@
     }, {
       "name" : "POST https://api-public.addthis.com/url/serviceapi/shares-post.json?services=sFbt&url=https://lojaebac.ebaconline.art.br/product/aether-gym-pant/",
       "time" : {
-        "start" : 1658702436087,
-        "stop" : 1658702436087,
+        "start" : 1660070247044,
+        "stop" : 1660070247044,
         "duration" : 0
       },
       "status" : "passed",
@@ -195,10 +195,10 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "POST https://api-public.addthis.com/url/serviceapi/shares-post.json?services=sFbt&url=https%3A%2F%2Flojaebac.ebaconline.art.br%2Fproduct%2Faether-gym-pant%2F",
+      "name" : "POST 200 https://api-public.addthis.com/url/serviceapi/shares-post.json?services=sFbt&url=https%3A%2F%2Flojaebac.ebaconline.art.br%2Fproduct%2Faether-gym-pant%2F",
       "time" : {
-        "start" : 1658702436087,
-        "stop" : 1658702436087,
+        "start" : 1660070247044,
+        "stop" : 1660070247044,
         "duration" : 0
       },
       "status" : "passed",
@@ -212,8 +212,8 @@
     }, {
       "name" : "get .button-variable-item-33",
       "time" : {
-        "start" : 1658702436087,
-        "stop" : 1658702436087,
+        "start" : 1660070247044,
+        "stop" : 1660070247044,
         "duration" : 0
       },
       "status" : "passed",
@@ -227,9 +227,9 @@
     }, {
       "name" : "click",
       "time" : {
-        "start" : 1658702436087,
-        "stop" : 1658702436615,
-        "duration" : 528
+        "start" : 1660070247044,
+        "stop" : 1660070247426,
+        "duration" : 382
       },
       "status" : "passed",
       "steps" : [ ],
@@ -240,10 +240,10 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "POST /wp-admin/admin-ajax.php",
+      "name" : "POST http://lojaebac.ebaconline.art.br/wp-admin/admin-ajax.php",
       "time" : {
-        "start" : 1658702436615,
-        "stop" : 1658702436615,
+        "start" : 1660070247426,
+        "stop" : 1660070247426,
         "duration" : 0
       },
       "status" : "passed",
@@ -255,10 +255,25 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "GET https://syndication.twitter.com/settings?session_id=e9a898fb9a83c8648e35d5fb4c290f17d091aed6",
+      "name" : "click",
       "time" : {
-        "start" : 1658702436615,
-        "stop" : 1658702436615,
+        "start" : 1660070247426,
+        "stop" : 1660070247649,
+        "duration" : 223
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "GET https://syndication.twitter.com/settings?session_id=8b851c1f6b7a481bbe9ee8db5d0b6b6fb9cc1ab6",
+      "time" : {
+        "start" : 1660070247649,
+        "stop" : 1660070247649,
         "duration" : 0
       },
       "status" : "passed",
@@ -272,9 +287,9 @@
     }, {
       "name" : "get .button-variable-item-Green",
       "time" : {
-        "start" : 1658702436615,
-        "stop" : 1658702436625,
-        "duration" : 10
+        "start" : 1660070247649,
+        "stop" : 1660070247664,
+        "duration" : 15
       },
       "status" : "passed",
       "steps" : [ ],
@@ -287,9 +302,9 @@
     }, {
       "name" : "click",
       "time" : {
-        "start" : 1658702436625,
-        "stop" : 1658702437062,
-        "duration" : 437
+        "start" : 1660070247664,
+        "stop" : 1660070248156,
+        "duration" : 492
       },
       "status" : "passed",
       "steps" : [ ],
@@ -302,8 +317,8 @@
     }, {
       "name" : "POST /wp-admin/admin-ajax.php",
       "time" : {
-        "start" : 1658702437062,
-        "stop" : 1658702437062,
+        "start" : 1660070248156,
+        "stop" : 1660070248156,
         "duration" : 0
       },
       "status" : "passed",
@@ -317,8 +332,8 @@
     }, {
       "name" : "POST /wp-admin/admin-ajax.php",
       "time" : {
-        "start" : 1658702437062,
-        "stop" : 1658702437062,
+        "start" : 1660070248156,
+        "stop" : 1660070248156,
         "duration" : 0
       },
       "status" : "passed",
@@ -332,9 +347,9 @@
     }, {
       "name" : "get input[name=quantity]",
       "time" : {
-        "start" : 1658702437062,
-        "stop" : 1658702437091,
-        "duration" : 29
+        "start" : 1660070248156,
+        "stop" : 1660070248167,
+        "duration" : 11
       },
       "status" : "passed",
       "steps" : [ ],
@@ -347,24 +362,9 @@
     }, {
       "name" : "clear",
       "time" : {
-        "start" : 1658702437091,
-        "stop" : 1658702437659,
-        "duration" : 568
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "GET 200 https://static.xx.fbcdn.net/rsrc.php/v3iwQw4/yl/l/pt_PT/1wdyq2jkdu6.js?_nc_x=Ij3Wp8lg5Kz",
-      "time" : {
-        "start" : 1658702437659,
-        "stop" : 1658702437659,
-        "duration" : 0
+        "start" : 1660070248167,
+        "stop" : 1660070248529,
+        "duration" : 362
       },
       "status" : "passed",
       "steps" : [ ],
@@ -377,8 +377,8 @@
     }, {
       "name" : "type 3",
       "time" : {
-        "start" : 1658702437659,
-        "stop" : 1658702437823,
+        "start" : 1660070248529,
+        "stop" : 1660070248693,
         "duration" : 164
       },
       "status" : "passed",
@@ -392,9 +392,9 @@
     }, {
       "name" : "get button[class=\"single_add_to_cart_button button alt\"]",
       "time" : {
-        "start" : 1658702437823,
-        "stop" : 1658702437840,
-        "duration" : 17
+        "start" : 1660070248693,
+        "stop" : 1660070248702,
+        "duration" : 9
       },
       "status" : "passed",
       "steps" : [ ],
@@ -407,9 +407,24 @@
     }, {
       "name" : "click",
       "time" : {
-        "start" : 1658702437840,
-        "stop" : 1658702438083,
-        "duration" : 243
+        "start" : 1660070248702,
+        "stop" : 1660070249046,
+        "duration" : 344
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "GET 200 https://static.xx.fbcdn.net/rsrc.php/v3iwQw4/ys/l/pt_PT/cS8skx2GDlY.js?_nc_x=Ij3Wp8lg5Kz",
+      "time" : {
+        "start" : 1660070249046,
+        "stop" : 1660070249046,
+        "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
@@ -422,8 +437,8 @@
     }, {
       "name" : "form sub --submitting form--",
       "time" : {
-        "start" : 1658702438083,
-        "stop" : 1658702438083,
+        "start" : 1660070249046,
+        "stop" : 1660070249046,
         "duration" : 0
       },
       "status" : "passed",
@@ -437,8 +452,8 @@
     }, {
       "name" : "page load --waiting for new page to load--",
       "time" : {
-        "start" : 1658702438083,
-        "stop" : 1658702438083,
+        "start" : 1660070249046,
+        "stop" : 1660070249046,
         "duration" : 0
       },
       "status" : "passed",
@@ -452,9 +467,9 @@
     }, {
       "name" : "GET 200 https://s7.addthis.com/l10n/client.pt.min.json",
       "time" : {
-        "start" : 1658702438083,
-        "stop" : 1658702442487,
-        "duration" : 4404
+        "start" : 1660070249046,
+        "stop" : 1660070253418,
+        "duration" : 4372
       },
       "status" : "passed",
       "steps" : [ ],
@@ -467,8 +482,8 @@
     }, {
       "name" : "POST 200 /?wc-ajax=get_refreshed_fragments",
       "time" : {
-        "start" : 1658702442486,
-        "stop" : 1658702442486,
+        "start" : 1660070253417,
+        "stop" : 1660070253417,
         "duration" : 0
       },
       "status" : "passed",
@@ -482,8 +497,8 @@
     }, {
       "name" : "POST 200 /wp-admin/admin-ajax.php",
       "time" : {
-        "start" : 1658702442486,
-        "stop" : 1658702442486,
+        "start" : 1660070253417,
+        "stop" : 1660070253417,
         "duration" : 0
       },
       "status" : "passed",
@@ -497,8 +512,8 @@
     }, {
       "name" : "POST http://lojaebac.ebaconline.art.br/wp-admin/admin-ajax.php",
       "time" : {
-        "start" : 1658702442486,
-        "stop" : 1658702442486,
+        "start" : 1660070253417,
+        "stop" : 1660070253417,
         "duration" : 0
       },
       "status" : "passed",
@@ -512,8 +527,8 @@
     }, {
       "name" : "POST https://api-public.addthis.com/url/serviceapi/shares-post.json?services=sFbt&url=https://lojaebac.ebaconline.art.br/product/aether-gym-pant/",
       "time" : {
-        "start" : 1658702442487,
-        "stop" : 1658702442487,
+        "start" : 1660070253418,
+        "stop" : 1660070253418,
         "duration" : 0
       },
       "status" : "passed",
@@ -525,10 +540,10 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "GET 200 https://syndication.twitter.com/settings?session_id=8243fe92077fc2481a95327e6295029bb993f027",
+      "name" : "GET 200 https://syndication.twitter.com/settings?session_id=edb5b568db6fc5a4d1feef30c7839f37d7c23f9d",
       "time" : {
-        "start" : 1658702442487,
-        "stop" : 1658702442487,
+        "start" : 1660070253418,
+        "stop" : 1660070253418,
         "duration" : 0
       },
       "status" : "passed",
@@ -542,8 +557,8 @@
     }, {
       "name" : "get span[class=\"mini-cart-items\"]",
       "time" : {
-        "start" : 1658702442487,
-        "stop" : 1658702442487,
+        "start" : 1660070253418,
+        "stop" : 1660070253418,
         "duration" : 0
       },
       "status" : "passed",
@@ -557,8 +572,8 @@
     }, {
       "name" : "assert expected **<span.mini-cart-items>** to contain **'3'**",
       "time" : {
-        "start" : 1658702442487,
-        "stop" : 1658702442487,
+        "start" : 1660070253418,
+        "stop" : 1660070253418,
         "duration" : 0
       },
       "status" : "passed",
@@ -572,9 +587,9 @@
     }, {
       "name" : "get div[class=woocommerce-message]",
       "time" : {
-        "start" : 1658702442487,
-        "stop" : 1658702442516,
-        "duration" : 29
+        "start" : 1660070253418,
+        "stop" : 1660070253434,
+        "duration" : 16
       },
       "status" : "passed",
       "steps" : [ ],
@@ -587,8 +602,8 @@
     }, {
       "name" : "assert expected **'<div.woocommerce-message>'** to contain **'&nbsp;3 × “Aether Gym Pant” foram adicionados no seu carrinho.\\t'**",
       "time" : {
-        "start" : 1658702442516,
-        "stop" : 1658702442516,
+        "start" : 1660070253434,
+        "stop" : 1660070253434,
         "duration" : 0
       },
       "status" : "passed",
@@ -602,17 +617,17 @@
     }, {
       "name" : "\"after each\" hook",
       "time" : {
-        "start" : 1658702442556,
-        "stop" : 1658702444900,
-        "duration" : 2344
+        "start" : 1660070253478,
+        "stop" : 1660070255772,
+        "duration" : 2294
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "screenshot",
         "time" : {
-          "start" : 1658702442565,
-          "stop" : 1658702444899,
-          "duration" : 2334
+          "start" : 1660070253479,
+          "stop" : 1660070255772,
+          "duration" : 2293
         },
         "status" : "passed",
         "steps" : [ ],
@@ -623,10 +638,10 @@
         "shouldDisplayMessage" : false,
         "hasContent" : false
       }, {
-        "name" : "GET 200 https://static.xx.fbcdn.net/rsrc.php/v3iwQw4/yl/l/pt_PT/1wdyq2jkdu6.js?_nc_x=Ij3Wp8lg5Kz",
+        "name" : "GET 200 https://static.xx.fbcdn.net/rsrc.php/v3iwQw4/ys/l/pt_PT/cS8skx2GDlY.js?_nc_x=Ij3Wp8lg5Kz",
         "time" : {
-          "start" : 1658702444899,
-          "stop" : 1658702444899,
+          "start" : 1660070255772,
+          "stop" : 1660070255772,
           "duration" : 0
         },
         "status" : "passed",
@@ -646,14 +661,14 @@
       "hasContent" : true
     } ],
     "attachments" : [ {
-      "uid" : "57594ba11cc7abd8",
-      "name" : "cypress/e2e/produtos.spec.js:2022-07-24T22:40:43.732Z",
-      "source" : "57594ba11cc7abd8.png",
+      "uid" : "777bb154c32719f4",
+      "name" : "cypress/e2e/produtos.spec.js:2022-08-09T18:37:34.660Z",
+      "source" : "777bb154c32719f4.png",
       "type" : "image/png",
-      "size" : 473861
+      "size" : 472443
     } ],
     "parameters" : [ ],
-    "stepsCount" : 42,
+    "stepsCount" : 43,
     "attachmentsCount" : 1,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -676,6 +691,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "5f1f560a96f1e2a3.json",
+  "source" : "d03a84c8e4a67314.json",
   "parameterValues" : [ ]
 }
