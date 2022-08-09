@@ -27,6 +27,8 @@ context('Funcionalidade Página de produtos', () => {
 
         cy.get('.button-variable-item-33')
             .click()
+            .click()
+
         cy.get('.button-variable-item-Green')
             .click()
 

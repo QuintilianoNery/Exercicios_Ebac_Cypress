@@ -12,6 +12,7 @@ context('Funcionalidade Login', () => {
 
     afterEach(() => {
         cy.screenshot();
+        cy.vi
     });
 
     //Na parte de login, poderia ser criado um comando customizado para ser utilizado em outros testes
@@ -24,7 +25,7 @@ context('Funcionalidade Login', () => {
         cy.url()
             .should('be.equal', 'http://lojaebac.ebaconline.art.br/minha-conta/')
         cy.get('span[class="hidden-xs"]')
-            .should('have.text', 'Welcome aluno_ebac !')
+            .should('have.text', 'Welcome teste_aluno20 !')
     });
 
     it.only('Deve fazer login com sucessso - Usando cypress.env.json', () => {
@@ -36,7 +37,7 @@ context('Funcionalidade Login', () => {
         cy.url()
             .should('be.equal', 'http://lojaebac.ebaconline.art.br/minha-conta/')
         cy.get('span[class="hidden-xs"]')
-            .should('have.text', 'Welcome aluno_ebac !')
+            .should('have.text', 'Welcome teste_aluno20 !')
     });
 
 
@@ -50,7 +51,7 @@ context('Funcionalidade Login', () => {
             cy.url()
                 .should('be.equal', 'http://lojaebac.ebaconline.art.br/minha-conta/')
             cy.get('span[class="hidden-xs"]')
-                .should('have.text', 'Welcome aluno_ebac !');
+                .should('have.text', 'Welcome teste_aluno20 !');
         })
     });
 

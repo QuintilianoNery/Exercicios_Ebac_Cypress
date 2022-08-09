@@ -6,10 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:open": "npx cypress open ",
-    "cy:run": "npx cypress run --config video=true --env allure=true --browser chrome --record --key eb341f2e-ee7f-4d28-89dd-f69a4776fd5a",
-    "Cy:open Alure": "npx cypress run --config video=true --env allure=true --browser edge",
+    "cy:run allure": "npx cypress run --config video=true --env allure=true --browser edge",
+    "cy:open alure": "npx cypress run --config video=true --env allure=true --browser edge",
     "cy:allureGenerete": "allure generate allure-results",
-    "cy:allureOpen": "aallure open allure-report"
+    "cy:allureOpen": "allure open allure-report"
   },
   "repository": {
     "type": "git",
