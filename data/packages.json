@@ -1,57 +1,5 @@
 {
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-  "children" : [ {
-    "name" : "Deve fazer cadastro de faturamento com sucesso",
-    "uid" : "d155dcd1a73fc6ba",
-    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
-    "time" : {
-      "start" : 1660070159510,
-      "stop" : 1660070173004,
-      "duration" : 13494
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "Deve fazer login com sucessso - Usando cypress.env.json",
-    "uid" : "8c7d8c3ec7305edd",
-    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
-    "time" : {
-      "start" : 1660070179753,
-      "stop" : 1660070192488,
-      "duration" : 12735
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "Deve completar o pré-cadastro com sucesso usando Comandos customizados",
-    "uid" : "35a67d7e00a2da9a",
-    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
-    "time" : {
-      "start" : 1660070204416,
-      "stop" : 1660070220828,
-      "duration" : 16412
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "Deve selecionar um produto da lista e adiciona-lo no carrinho",
-    "uid" : "d03a84c8e4a67314",
-    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
-    "time" : {
-      "start" : 1660070233486,
-      "stop" : 1660070253435,
-      "duration" : 19949
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
-  } ],
+  "children" : [ ],
   "name" : "packages"
 }
