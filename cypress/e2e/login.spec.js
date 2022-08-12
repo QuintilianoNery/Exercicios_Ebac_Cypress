@@ -28,9 +28,9 @@ context('Funcionalidade Login', () => {
             .should('have.text', 'Welcome teste_aluno20 !')
     });
 
-    it.only('Deve fazer login com sucessso - Usando cypress.env.json', () => {
+    it('Deve fazer login com sucessso - Usando cypress.env.json', () => {
         cy.get('i[class="icon-user-unfollow icons"]').click()
-        cy.get('input[id="username"]').type(Cypress.config('usuarioEbac'));
+        // cy.get('input[id="username"]').type(Cypress.config('usuarioEbac'));
         cy.get('input[id="password"]').type(Cypress.config('senhaEbac'));
         cy.get('input[id="rememberme"]').click();
         cy.get('input[name="login"]').click();

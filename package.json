@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:open": "npx cypress open ",
-    "cy:run allure": "npx cypress run --config video=true --env allure=true --browser edge",
-    "cy:open alure": "npx cypress run --config video=true --env allure=true --browser edge",
+    "cy:reportTesults": "node runner.js",
+    "cy:reportCypress": "npx cypress run --record --key eb341f2e-ee7f-4d28-89dd-f69a4776fd5a",
+    "cy:reportAllure": "npx cypress run --config video=true --env allure=true --browser edge",
     "cy:allureGenerete": "allure generate allure-results",
     "cy:allureOpen": "allure open allure-report"
   },
@@ -27,5 +28,8 @@
     "cypress": "^10.3.0",
     "faker-br": "^0.4.1",
     "leite": "^0.2.0"
+  },
+  "dependencies": {
+    "cypress-tesults-reporter": "^1.2.0"
   }
 }

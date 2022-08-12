@@ -17,7 +17,7 @@ context('Funcionalidade Página de produtos', () => {
     //Então vou continuar o teste de inclusão do produto ao carrinho nesme mesmo teste.
     //em uma futura refatoração, utilizar comandos customizados para diminuir a repetição de código
     // E unir alguns fluxos de testes em um mesmo teste.
-    it.only('Deve selecionar um produto da lista e adiciona-lo no carrinho', () => {
+    it('Deve selecionar um produto da lista e adiciona-lo no carrinho', () => {
         cy.get('div[class="product-block grid"]')
             //.first()
             //.last()
