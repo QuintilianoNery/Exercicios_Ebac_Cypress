@@ -4,3 +4,5 @@ node_modules/
 temp/
 allure-report
 allure-results
+video
+screenshots
