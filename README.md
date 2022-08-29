@@ -37,3 +37,13 @@ npm i faker-br --dev
 ```shell
    npx cypress run
 ```
+
+#### Dependências
+```
+    "@shelex/cypress-allure-plugin": "^2.28.0",
+    "cypress": "^10.3.0",
+    "faker-br": "^0.4.1",
+    "leite": "^0.2.0"
+    "cypress-tesults-reporter": "^1.2.0"
+
+```
