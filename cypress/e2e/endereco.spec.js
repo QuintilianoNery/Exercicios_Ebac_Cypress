@@ -2,7 +2,7 @@
 
 const perfil = require('../fixtures/perfil.json');
 
-describe.ski('Funcionalidade Endereços - Faturamento e Entrega', () => {
+describe('Funcionalidade Endereços - Faturamento e Entrega', () => {
     beforeEach(() => {
         cy.visit('minha-conta')
         
