@@ -1,1 +1,91 @@
-[ ]
+[ {
+  "uid" : "2fd7b594f4265cb4",
+  "name" : "Deve fazer cadastro de faturamento com sucesso",
+  "time" : {
+    "start" : 1662151570603,
+    "stop" : 1662151584070,
+    "duration" : 13467
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f2c43c93fcd24d1f",
+  "name" : "Deve fazer login com sucessso - Usando fixture",
+  "time" : {
+    "start" : 1662151611432,
+    "stop" : 1662151616916,
+    "duration" : 5484
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f0cf5d738e554360",
+  "name" : "Deve completar o pré cadastro com sucessso",
+  "time" : {
+    "start" : 1662151646974,
+    "stop" : 1662151665045,
+    "duration" : 18071
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "439aaeb2e439ba53",
+  "name" : "Deve exibir uma mensagem de erro ao insserir um usuário inválido",
+  "time" : {
+    "start" : 1662151617982,
+    "stop" : 1662151622911,
+    "duration" : 4929
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dc941ace8c5a32d8",
+  "name" : "Deve fazer login com sucessso - Usando arquivo de dados",
+  "time" : {
+    "start" : 1662151590712,
+    "stop" : 1662151603869,
+    "duration" : 13157
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d86f738cbc9f2868",
+  "name" : "Deve exibir uma mensagem de erro ao insserir senha inválida",
+  "time" : {
+    "start" : 1662151624046,
+    "stop" : 1662151628983,
+    "duration" : 4937
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "91e280c71e9c497c",
+  "name" : "Deve completar o pré-cadastro com sucesso usando Comandos customizados",
+  "time" : {
+    "start" : 1662151665990,
+    "stop" : 1662151665999,
+    "duration" : 9
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "dc83fb887ce02167",
+  "name" : "Deve fazer login com sucessso - Usando cypress.env.json",
+  "time" : {
+    "start" : 1662151604860,
+    "stop" : 1662151610532,
+    "duration" : 5672
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "696664ec47350b61",
+  "name" : "Deve selecionar um produto da lista e adiciona-lo no carrinho",
+  "time" : {
+    "start" : 1662151677925,
+    "stop" : 1662151698443,
+    "duration" : 20518
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

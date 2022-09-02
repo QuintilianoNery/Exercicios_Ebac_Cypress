@@ -1,0 +1,408 @@
+{
+  "uid" : "dc83fb887ce02167",
+  "name" : "Deve fazer login com sucessso - Usando cypress.env.json",
+  "fullName" : "Deve fazer login com sucessso - Usando cypress.env.json",
+  "historyId" : "db7576ed728bc2ea21990a54576d72bc",
+  "time" : {
+    "start" : 1662151604860,
+    "stop" : 1662151610532,
+    "duration" : 5672
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1662151604861,
+        "stop" : 1662151606350,
+        "duration" : 1489
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "visit /",
+        "time" : {
+          "start" : 1662151604955,
+          "stop" : 1662151606350,
+          "duration" : 1395
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "POST /?wc-ajax=get_refreshed_fragments",
+        "time" : {
+          "start" : 1662151606349,
+          "stop" : 1662151606349,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "get i[class=\"icon-user-unfollow icons\"]",
+      "time" : {
+        "start" : 1662151606352,
+        "stop" : 1662151606358,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "click",
+      "time" : {
+        "start" : 1662151606358,
+        "stop" : 1662151606646,
+        "duration" : 288
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "page load --waiting for new page to load--",
+      "time" : {
+        "start" : 1662151606646,
+        "stop" : 1662151606646,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "new url http://lojaebac.ebaconline.art.br/minha-conta/",
+      "time" : {
+        "start" : 1662151606646,
+        "stop" : 1662151607400,
+        "duration" : 754
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "get input[id=\"username\"]",
+      "time" : {
+        "start" : 1662151607400,
+        "stop" : 1662151607400,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "type aluno_ebac@teste.com",
+      "time" : {
+        "start" : 1662151607400,
+        "stop" : 1662151608048,
+        "duration" : 648
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "get input[id=\"password\"]",
+      "time" : {
+        "start" : 1662151608048,
+        "stop" : 1662151608056,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "type teste@teste.com",
+      "time" : {
+        "start" : 1662151608056,
+        "stop" : 1662151608462,
+        "duration" : 406
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "get input[id=\"rememberme\"]",
+      "time" : {
+        "start" : 1662151608462,
+        "stop" : 1662151608470,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "click",
+      "time" : {
+        "start" : 1662151608470,
+        "stop" : 1662151608650,
+        "duration" : 180
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "get input[name=\"login\"]",
+      "time" : {
+        "start" : 1662151608650,
+        "stop" : 1662151608659,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "click",
+      "time" : {
+        "start" : 1662151608659,
+        "stop" : 1662151608844,
+        "duration" : 185
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "form sub --submitting form--",
+      "time" : {
+        "start" : 1662151608844,
+        "stop" : 1662151608844,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "page load --waiting for new page to load--",
+      "time" : {
+        "start" : 1662151608844,
+        "stop" : 1662151608844,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "url",
+      "time" : {
+        "start" : 1662151608844,
+        "stop" : 1662151610507,
+        "duration" : 1663
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **http://lojaebac.ebaconline.art.br/minha-conta/** to equal **http://lojaebac.ebaconline.art.br/minha-conta/**",
+      "time" : {
+        "start" : 1662151610507,
+        "stop" : 1662151610507,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "http://lojaebac.ebaconline.art.br/minha-conta/"
+      }, {
+        "name" : "expected",
+        "value" : "http://lojaebac.ebaconline.art.br/minha-conta/"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "get span[class=\"hidden-xs\"]",
+      "time" : {
+        "start" : 1662151610507,
+        "stop" : 1662151610532,
+        "duration" : 25
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **<span.hidden-xs>** to have text **Welcome teste_aluno20 !**",
+      "time" : {
+        "start" : 1662151610532,
+        "stop" : 1662151610532,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "Welcome teste_aluno20 !"
+      }, {
+        "name" : "expected",
+        "value" : "Welcome teste_aluno20 !"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "\"after each\" hook",
+      "time" : {
+        "start" : 1662151610586,
+        "stop" : 1662151611385,
+        "duration" : 799
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "screenshot",
+        "time" : {
+          "start" : 1662151610587,
+          "stop" : 1662151611384,
+          "duration" : 797
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "e37d7587f979bcc8",
+      "name" : "cypress/e2e/login.spec.js:2022-09-02T20:46:50.860Z",
+      "source" : "e37d7587f979bcc8.png",
+      "type" : "image/png",
+      "size" : 91470
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 23,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Funcionalidade Login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "dc83fb887ce02167.json",
+  "parameterValues" : [ ]
+}
