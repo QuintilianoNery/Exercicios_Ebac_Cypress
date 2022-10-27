@@ -17,19 +17,19 @@ context('Funcionalidade Página de produtos', () => {
     //Então vou continuar o teste de inclusão do produto ao carrinho nesme mesmo teste.
     //em uma futura refatoração, utilizar comandos customizados para diminuir a repetição de código
     // E unir alguns fluxos de testes em um mesmo teste.
-    it('Deve selecionar um produto da lista e adiciona-lo no carrinho', () => {
+    it.skip('Deve selecionar um produto da lista e adiciona-lo no carrinho', () => {
         cy.get('div[class="product-block grid"]')
             //.first()
             //.last()
             //.contains('texto aqui')
-            .eq(3)
+            .eq(0)
             .click()
 
-        cy.get('.button-variable-item-33')
+        cy.get('.button-variable-item-XS')
             .click()
             .click()
 
-        cy.get('.button-variable-item-Green')
+        cy.get('li[data-value="Green"]')
             .click()
 
         cy.get('input[name=quantity]')

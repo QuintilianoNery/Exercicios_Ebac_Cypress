@@ -40,7 +40,7 @@ context('Funcionalidade Pré Cadasstro', () => {
     })
 
     //Teste usando comandos personalizados para pré-cadastro
-    it.skip('Deve completar o pré-cadastro com sucesso usando Comandos customizados', () => {
+    it.only('Deve completar o pré-cadastro com sucesso usando Comandos customizados', () => {
         cy.preCadastro(emailAleatorio, senhaAleatoria, nome, sobreNome)
 
     });
