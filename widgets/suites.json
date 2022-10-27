@@ -12,19 +12,19 @@
       "total" : 5
     }
   }, {
-    "uid" : "a06a8689995127853897fa5e87b697eb",
-    "name" : "Funcionalidade Pré Cadasstro",
+    "uid" : "08618982288f7cc98252c0dfdbe189bd",
+    "name" : "Funcionalidade Endereços - Faturamento e Entrega",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 1,
+      "skipped" : 0,
       "passed" : 1,
       "unknown" : 0,
-      "total" : 2
+      "total" : 1
     }
   }, {
-    "uid" : "08618982288f7cc98252c0dfdbe189bd",
-    "name" : "Funcionalidade Endereços - Faturamento e Entrega",
+    "uid" : "a06a8689995127853897fa5e87b697eb",
+    "name" : "Funcionalidade Pré Cadasstro",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -39,8 +39,8 @@
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
+      "skipped" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     }

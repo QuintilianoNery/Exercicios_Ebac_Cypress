@@ -1,12 +1,12 @@
 {
-  "uid" : "f2c43c93fcd24d1f",
-  "name" : "Deve fazer login com sucessso - Usando fixture",
-  "fullName" : "Deve fazer login com sucessso - Usando fixture",
-  "historyId" : "72111b4ebd672e1519dfb4059f419478",
+  "uid" : "8d6f00bb33c02008",
+  "name" : "Deve exibir uma mensagem de erro ao insserir um usuário inválido",
+  "fullName" : "Deve exibir uma mensagem de erro ao insserir um usuário inválido",
+  "historyId" : "2e1433c8d3f2319e7bcaf97004999009",
   "time" : {
-    "start" : 1662151611432,
-    "stop" : 1662151616916,
-    "duration" : 5484
+    "start" : 1666839797915,
+    "stop" : 1666839802675,
+    "duration" : 4760
   },
   "status" : "passed",
   "flaky" : false,
@@ -17,17 +17,17 @@
     "steps" : [ {
       "name" : "\"before each\" hook",
       "time" : {
-        "start" : 1662151611432,
-        "stop" : 1662151612959,
-        "duration" : 1527
+        "start" : 1666839797915,
+        "stop" : 1666839799517,
+        "duration" : 1602
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "visit /",
         "time" : {
-          "start" : 1662151611523,
-          "stop" : 1662151612959,
-          "duration" : 1436
+          "start" : 1666839797995,
+          "stop" : 1666839799517,
+          "duration" : 1522
         },
         "status" : "passed",
         "steps" : [ ],
@@ -40,8 +40,8 @@
       }, {
         "name" : "POST /?wc-ajax=get_refreshed_fragments",
         "time" : {
-          "start" : 1662151612959,
-          "stop" : 1662151612959,
+          "start" : 1666839799517,
+          "stop" : 1666839799517,
           "duration" : 0
         },
         "status" : "passed",
@@ -60,25 +60,10 @@
       "shouldDisplayMessage" : false,
       "hasContent" : true
     }, {
-      "name" : "fixture (\"perfil\")",
-      "time" : {
-        "start" : 1662151612963,
-        "stop" : 1662151612987,
-        "duration" : 24
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
       "name" : "get i[class=\"icon-user-unfollow icons\"]",
       "time" : {
-        "start" : 1662151612989,
-        "stop" : 1662151612994,
+        "start" : 1666839799519,
+        "stop" : 1666839799524,
         "duration" : 5
       },
       "status" : "passed",
@@ -92,9 +77,9 @@
     }, {
       "name" : "click",
       "time" : {
-        "start" : 1662151612994,
-        "stop" : 1662151613313,
-        "duration" : 319
+        "start" : 1666839799524,
+        "stop" : 1666839799733,
+        "duration" : 209
       },
       "status" : "passed",
       "steps" : [ ],
@@ -107,8 +92,8 @@
     }, {
       "name" : "page load --waiting for new page to load--",
       "time" : {
-        "start" : 1662151613313,
-        "stop" : 1662151613313,
+        "start" : 1666839799733,
+        "stop" : 1666839799733,
         "duration" : 0
       },
       "status" : "passed",
@@ -122,9 +107,9 @@
     }, {
       "name" : "new url http://lojaebac.ebaconline.art.br/minha-conta/",
       "time" : {
-        "start" : 1662151613313,
-        "stop" : 1662151614051,
-        "duration" : 738
+        "start" : 1666839799733,
+        "stop" : 1666839800689,
+        "duration" : 956
       },
       "status" : "passed",
       "steps" : [ ],
@@ -137,9 +122,9 @@
     }, {
       "name" : "get input[id=\"username\"]",
       "time" : {
-        "start" : 1662151614049,
-        "stop" : 1662151614051,
-        "duration" : 2
+        "start" : 1666839800689,
+        "stop" : 1666839800689,
+        "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
@@ -152,9 +137,9 @@
     }, {
       "name" : "get input[id=\"password\"]",
       "time" : {
-        "start" : 1662151614582,
-        "stop" : 1662151614589,
-        "duration" : 7
+        "start" : 1666839800984,
+        "stop" : 1666839800990,
+        "duration" : 6
       },
       "status" : "passed",
       "steps" : [ ],
@@ -167,9 +152,9 @@
     }, {
       "name" : "get input[id=\"rememberme\"]",
       "time" : {
-        "start" : 1662151614978,
-        "stop" : 1662151614985,
-        "duration" : 7
+        "start" : 1666839801370,
+        "stop" : 1666839801376,
+        "duration" : 6
       },
       "status" : "passed",
       "steps" : [ ],
@@ -182,9 +167,9 @@
     }, {
       "name" : "click",
       "time" : {
-        "start" : 1662151614985,
-        "stop" : 1662151615146,
-        "duration" : 161
+        "start" : 1666839801376,
+        "stop" : 1666839801509,
+        "duration" : 133
       },
       "status" : "passed",
       "steps" : [ ],
@@ -197,8 +182,8 @@
     }, {
       "name" : "get input[name=\"login\"]",
       "time" : {
-        "start" : 1662151615146,
-        "stop" : 1662151615159,
+        "start" : 1666839801509,
+        "stop" : 1666839801522,
         "duration" : 13
       },
       "status" : "passed",
@@ -212,9 +197,9 @@
     }, {
       "name" : "click",
       "time" : {
-        "start" : 1662151615159,
-        "stop" : 1662151615356,
-        "duration" : 197
+        "start" : 1666839801522,
+        "stop" : 1666839801665,
+        "duration" : 143
       },
       "status" : "passed",
       "steps" : [ ],
@@ -227,8 +212,8 @@
     }, {
       "name" : "form sub --submitting form--",
       "time" : {
-        "start" : 1662151615356,
-        "stop" : 1662151615356,
+        "start" : 1666839801665,
+        "stop" : 1666839801665,
         "duration" : 0
       },
       "status" : "passed",
@@ -242,8 +227,8 @@
     }, {
       "name" : "page load --waiting for new page to load--",
       "time" : {
-        "start" : 1662151615356,
-        "stop" : 1662151615356,
+        "start" : 1666839801665,
+        "stop" : 1666839801665,
         "duration" : 0
       },
       "status" : "passed",
@@ -255,11 +240,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "url",
+      "name" : "get div[class=\"woocommerce-notices-wrapper\"]",
       "time" : {
-        "start" : 1662151615356,
-        "stop" : 1662151616904,
-        "duration" : 1548
+        "start" : 1666839801665,
+        "stop" : 1666839802666,
+        "duration" : 1001
       },
       "status" : "passed",
       "steps" : [ ],
@@ -270,32 +255,11 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "assert expected **http://lojaebac.ebaconline.art.br/minha-conta/** to equal **http://lojaebac.ebaconline.art.br/minha-conta/**",
+      "name" : "assert expected **<div.woocommerce-notices-wrapper>** to be **visible**",
       "time" : {
-        "start" : 1662151616903,
-        "stop" : 1662151616903,
-        "duration" : 0
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ {
-        "name" : "actual",
-        "value" : "http://lojaebac.ebaconline.art.br/minha-conta/"
-      }, {
-        "name" : "expected",
-        "value" : "http://lojaebac.ebaconline.art.br/minha-conta/"
-      } ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : true
-    }, {
-      "name" : "get span[class=\"hidden-xs\"]",
-      "time" : {
-        "start" : 1662151616904,
-        "stop" : 1662151616916,
-        "duration" : 12
+        "start" : 1666839802665,
+        "stop" : 1666839802666,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -306,40 +270,49 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "assert expected **<span.hidden-xs>** to have text **Welcome teste_aluno20 !**",
+      "name" : "get .woocommerce-error",
       "time" : {
-        "start" : 1662151616916,
-        "stop" : 1662151616916,
+        "start" : 1666839802666,
+        "stop" : 1666839802675,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **<ul.woocommerce-error>** to contain **Endereço de e-mail desconhecido. Verifique novamente ou tente seu nome de usuário.**",
+      "time" : {
+        "start" : 1666839802675,
+        "stop" : 1666839802675,
         "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
-      "parameters" : [ {
-        "name" : "actual",
-        "value" : "Welcome teste_aluno20 !"
-      }, {
-        "name" : "expected",
-        "value" : "Welcome teste_aluno20 !"
-      } ],
+      "parameters" : [ ],
       "stepsCount" : 0,
       "attachmentsCount" : 0,
       "shouldDisplayMessage" : false,
-      "hasContent" : true
+      "hasContent" : false
     }, {
       "name" : "\"after each\" hook",
       "time" : {
-        "start" : 1662151617008,
-        "stop" : 1662151617921,
-        "duration" : 913
+        "start" : 1666839802737,
+        "stop" : 1666839803597,
+        "duration" : 860
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "screenshot",
         "time" : {
-          "start" : 1662151617009,
-          "stop" : 1662151617921,
-          "duration" : 912
+          "start" : 1666839802739,
+          "stop" : 1666839803597,
+          "duration" : 858
         },
         "status" : "passed",
         "steps" : [ ],
@@ -358,14 +331,14 @@
       "hasContent" : true
     } ],
     "attachments" : [ {
-      "uid" : "d1895c17a9f33a37",
-      "name" : "cypress/e2e/login.spec.js:2022-09-02T20:46:57.297Z",
-      "source" : "d1895c17a9f33a37.png",
+      "uid" : "9266dfa7f400e4d2",
+      "name" : "cypress/e2e/login.spec.js:2022-10-27T03:03:23.010Z",
+      "source" : "9266dfa7f400e4d2.png",
       "type" : "image/png",
-      "size" : 91470
+      "size" : 103816
     } ],
     "parameters" : [ ],
-    "stepsCount" : 22,
+    "stepsCount" : 21,
     "attachmentsCount" : 1,
     "shouldDisplayMessage" : false,
     "hasContent" : true
@@ -388,6 +361,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "f2c43c93fcd24d1f.json",
+  "source" : "8d6f00bb33c02008.json",
   "parameterValues" : [ ]
 }

@@ -1,12 +1,12 @@
 {
-  "uid" : "2fd7b594f4265cb4",
+  "uid" : "6fa3474b76d895b6",
   "name" : "Deve fazer cadastro de faturamento com sucesso",
   "fullName" : "Deve fazer cadastro de faturamento com sucesso",
   "historyId" : "f9a168c8ef586a793af7144effb2ad57",
   "time" : {
-    "start" : 1662151570603,
-    "stop" : 1662151584070,
-    "duration" : 13467
+    "start" : 1666839749763,
+    "stop" : 1666839763344,
+    "duration" : 13581
   },
   "status" : "passed",
   "flaky" : false,
@@ -17,17 +17,17 @@
     "steps" : [ {
       "name" : "\"before each\" hook",
       "time" : {
-        "start" : 1662151570605,
-        "stop" : 1662151584068,
-        "duration" : 13463
+        "start" : 1666839749764,
+        "stop" : 1666839763342,
+        "duration" : 13578
       },
       "status" : "passed",
       "steps" : [ {
         "name" : "visit minha-conta -> 301: http://lojaebac.ebaconline.art.br/minha-conta/",
         "time" : {
-          "start" : 1662151570642,
-          "stop" : 1662151580274,
-          "duration" : 9632
+          "start" : 1666839749792,
+          "stop" : 1666839759848,
+          "duration" : 10056
         },
         "status" : "passed",
         "steps" : [ ],
@@ -38,10 +38,10 @@
         "shouldDisplayMessage" : false,
         "hasContent" : false
       }, {
-        "name" : "POST 200 /?wc-ajax=get_refreshed_fragments",
+        "name" : "POST /?wc-ajax=get_refreshed_fragments",
         "time" : {
-          "start" : 1662151580273,
-          "stop" : 1662151580273,
+          "start" : 1666839759847,
+          "stop" : 1666839759847,
           "duration" : 0
         },
         "status" : "passed",
@@ -55,9 +55,9 @@
       }, {
         "name" : "fixture (\"perfil\")",
         "time" : {
-          "start" : 1662151580274,
-          "stop" : 1662151580300,
-          "duration" : 26
+          "start" : 1666839759848,
+          "stop" : 1666839759862,
+          "duration" : 14
         },
         "status" : "passed",
         "steps" : [ ],
@@ -70,16 +70,16 @@
       }, {
         "name" : "login (\"aluno_ebac@teste.com\"; \"teste@teste.com\")",
         "time" : {
-          "start" : 1662151580301,
-          "stop" : 1662151581617,
-          "duration" : 1316
+          "start" : 1666839759863,
+          "stop" : 1666839761029,
+          "duration" : 1166
         },
         "status" : "passed",
         "steps" : [ {
           "name" : "get input[id=\"username\"]",
           "time" : {
-            "start" : 1662151580303,
-            "stop" : 1662151580319,
+            "start" : 1666839759869,
+            "stop" : 1666839759885,
             "duration" : 16
           },
           "status" : "passed",
@@ -93,9 +93,9 @@
         }, {
           "name" : "get input[id=\"password\"]",
           "time" : {
-            "start" : 1662151580804,
-            "stop" : 1662151580826,
-            "duration" : 22
+            "start" : 1666839760323,
+            "stop" : 1666839760329,
+            "duration" : 6
           },
           "status" : "passed",
           "steps" : [ ],
@@ -108,8 +108,8 @@
         }, {
           "name" : "get input[id=\"rememberme\"]",
           "time" : {
-            "start" : 1662151581294,
-            "stop" : 1662151581301,
+            "start" : 1666839760771,
+            "stop" : 1666839760778,
             "duration" : 7
           },
           "status" : "passed",
@@ -123,9 +123,9 @@
         }, {
           "name" : "click",
           "time" : {
-            "start" : 1662151581301,
-            "stop" : 1662151581459,
-            "duration" : 158
+            "start" : 1666839760778,
+            "stop" : 1666839760899,
+            "duration" : 121
           },
           "status" : "passed",
           "steps" : [ ],
@@ -138,9 +138,9 @@
         }, {
           "name" : "get input[name=\"login\"]",
           "time" : {
-            "start" : 1662151581459,
-            "stop" : 1662151581465,
-            "duration" : 6
+            "start" : 1666839760899,
+            "stop" : 1666839760904,
+            "duration" : 5
           },
           "status" : "passed",
           "steps" : [ ],
@@ -153,9 +153,9 @@
         }, {
           "name" : "click",
           "time" : {
-            "start" : 1662151581465,
-            "stop" : 1662151581617,
-            "duration" : 152
+            "start" : 1666839760904,
+            "stop" : 1666839761029,
+            "duration" : 125
           },
           "status" : "passed",
           "steps" : [ ],
@@ -168,8 +168,8 @@
         }, {
           "name" : "form sub --submitting form--",
           "time" : {
-            "start" : 1662151581617,
-            "stop" : 1662151581617,
+            "start" : 1666839761029,
+            "stop" : 1666839761029,
             "duration" : 0
           },
           "status" : "passed",
@@ -183,8 +183,8 @@
         }, {
           "name" : "page load --waiting for new page to load--",
           "time" : {
-            "start" : 1662151581617,
-            "stop" : 1662151581617,
+            "start" : 1666839761029,
+            "stop" : 1666839761029,
             "duration" : 0
           },
           "status" : "passed",
@@ -235,6 +235,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "2fd7b594f4265cb4.json",
+  "source" : "6fa3474b76d895b6.json",
   "parameterValues" : [ ]
 }

@@ -1,91 +1,81 @@
 [ {
-  "uid" : "2fd7b594f4265cb4",
+  "uid" : "6fa3474b76d895b6",
   "name" : "Deve fazer cadastro de faturamento com sucesso",
   "time" : {
-    "start" : 1662151570603,
-    "stop" : 1662151584070,
-    "duration" : 13467
+    "start" : 1666839749763,
+    "stop" : 1666839763344,
+    "duration" : 13581
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "f2c43c93fcd24d1f",
-  "name" : "Deve fazer login com sucessso - Usando fixture",
-  "time" : {
-    "start" : 1662151611432,
-    "stop" : 1662151616916,
-    "duration" : 5484
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "f0cf5d738e554360",
-  "name" : "Deve completar o pré cadastro com sucessso",
-  "time" : {
-    "start" : 1662151646974,
-    "stop" : 1662151665045,
-    "duration" : 18071
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "439aaeb2e439ba53",
-  "name" : "Deve exibir uma mensagem de erro ao insserir um usuário inválido",
-  "time" : {
-    "start" : 1662151617982,
-    "stop" : 1662151622911,
-    "duration" : 4929
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "dc941ace8c5a32d8",
+  "uid" : "3713fedf77ea9358",
   "name" : "Deve fazer login com sucessso - Usando arquivo de dados",
   "time" : {
-    "start" : 1662151590712,
-    "stop" : 1662151603869,
-    "duration" : 13157
+    "start" : 1666839770148,
+    "stop" : 1666839784448,
+    "duration" : 14300
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "d86f738cbc9f2868",
+  "uid" : "e04fc2c28a7b09e3",
   "name" : "Deve exibir uma mensagem de erro ao insserir senha inválida",
   "time" : {
-    "start" : 1662151624046,
-    "stop" : 1662151628983,
-    "duration" : 4937
+    "start" : 1666839803601,
+    "stop" : 1666839808458,
+    "duration" : 4857
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "91e280c71e9c497c",
+  "uid" : "8d6f00bb33c02008",
+  "name" : "Deve exibir uma mensagem de erro ao insserir um usuário inválido",
+  "time" : {
+    "start" : 1666839797915,
+    "stop" : 1666839802675,
+    "duration" : 4760
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2a1843a0aaaf210b",
+  "name" : "Deve fazer login com sucessso - Usando fixture",
+  "time" : {
+    "start" : 1666839791569,
+    "stop" : 1666839796999,
+    "duration" : 5430
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cb773175f1ea4554",
   "name" : "Deve completar o pré-cadastro com sucesso usando Comandos customizados",
   "time" : {
-    "start" : 1662151665990,
-    "stop" : 1662151665999,
-    "duration" : 9
+    "start" : 1666839825872,
+    "stop" : 1666839847858,
+    "duration" : 21986
   },
-  "status" : "skipped",
+  "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "dc83fb887ce02167",
+  "uid" : "5b460faa38e983fa",
   "name" : "Deve fazer login com sucessso - Usando cypress.env.json",
   "time" : {
-    "start" : 1662151604860,
-    "stop" : 1662151610532,
-    "duration" : 5672
+    "start" : 1666839785408,
+    "stop" : 1666839790719,
+    "duration" : 5311
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "696664ec47350b61",
+  "uid" : "e8923ce16963c7a4",
   "name" : "Deve selecionar um produto da lista e adiciona-lo no carrinho",
   "time" : {
-    "start" : 1662151677925,
-    "stop" : 1662151698443,
-    "duration" : 20518
+    "start" : 1666839862565,
+    "stop" : 1666839862570,
+    "duration" : 5
   },
-  "status" : "passed",
+  "status" : "skipped",
   "severity" : "normal"
 } ]

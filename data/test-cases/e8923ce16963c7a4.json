@@ -1,12 +1,12 @@
 {
-  "uid" : "91e280c71e9c497c",
-  "name" : "Deve completar o pré-cadastro com sucesso usando Comandos customizados",
-  "fullName" : "Deve completar o pré-cadastro com sucesso usando Comandos customizados",
-  "historyId" : "79bc869d35284e21ceed887af2503a98",
+  "uid" : "e8923ce16963c7a4",
+  "name" : "Deve selecionar um produto da lista e adiciona-lo no carrinho",
+  "fullName" : "Deve selecionar um produto da lista e adiciona-lo no carrinho",
+  "historyId" : "9eb256176c9ea3d34078ba153e8c9ded",
   "time" : {
-    "start" : 1662151665990,
-    "stop" : 1662151665999,
-    "duration" : 9
+    "start" : 1666839862565,
+    "stop" : 1666839862570,
+    "duration" : 5
   },
   "status" : "skipped",
   "statusMessage" : "Test ignored",
@@ -18,11 +18,11 @@
     "statusMessage" : "Test ignored",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "3b7ff355b5f3873a",
+      "uid" : "bf34dbf4410916a5",
       "name" : "video recording",
-      "source" : "3b7ff355b5f3873a.mp4",
+      "source" : "bf34dbf4410916a5.mp4",
       "type" : "video/mp4",
-      "size" : 1591436
+      "size" : 125604
     } ],
     "parameters" : [ ],
     "stepsCount" : 0,
@@ -33,7 +33,7 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "suite",
-    "value" : "Funcionalidade Pré Cadasstro"
+    "value" : "Funcionalidade Página de produtos"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -48,6 +48,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "91e280c71e9c497c.json",
+  "source" : "e8923ce16963c7a4.json",
   "parameterValues" : [ ]
 }
