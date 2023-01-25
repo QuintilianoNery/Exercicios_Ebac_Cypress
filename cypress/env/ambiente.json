@@ -1,0 +1,8 @@
+{
+    "ebac": {
+        "titulo": "usuarioEBAC",
+        "usuarioEbac": "aluno_ebac@teste.com",
+        "senhaEbac": "teste@teste.com",
+        "baseUrl": "http://lojaebac.ebaconline.art.br/"
+    }
+}

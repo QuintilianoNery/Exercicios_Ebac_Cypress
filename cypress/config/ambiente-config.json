@@ -1,0 +1,15 @@
+{
+  "video": true,
+  "projectId": "fpi71k",
+  "chromeWebSecurity": false,
+  "trashAssetsBeforeRuns": true,
+  "videoCompression": false,
+  "slowTestThreshold": 60000,
+  "defaultCommandTimeout": 60000,
+  "viewportWidth": 1920,
+  "viewportHeight": 1080,
+  "includeShadowDom": true,
+  "testFiles": [
+    "e2e/**"
+  ]
+}

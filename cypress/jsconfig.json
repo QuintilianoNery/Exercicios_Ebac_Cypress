@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@helper/*": ["./support/helper/*"],
+      "@fixtures/*":["./fixtures/*"],
+      "@page/*": ["./support/page/*"]
+    }
+  }
+}
