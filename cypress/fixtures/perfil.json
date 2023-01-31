@@ -1,5 +1,9 @@
 {
-    "titulo": "usuarioEBAC",
-    "usuarioEbac": "aluno_ebac@teste.com",
-    "senhaEbac": "teste@teste.com"
+  "titulo": "usuarioEBAC",
+  "usuarioEbac": "q@q.com",
+  "senhaEbac": "Ebac123456*",
+  "baseUrl": "http://lojaebac.ebaconline.art.br/",
+  "uri": {
+    "minhaConta": "minha-conta/"
+  }
 }

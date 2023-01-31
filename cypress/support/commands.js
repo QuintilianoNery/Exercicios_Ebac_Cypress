@@ -25,11 +25,14 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
+
+import MinhaConta from './pages/home/MinhaConta'
+
 Cypress.Commands.add('login', (usuario, senha) => {
-    cy.get('input[id="username"]').type(usuario, { log: false });
-    cy.get('input[id="password"]').type(senha, { log: false });
-    cy.get('input[id="rememberme"]').click();
-    cy.get('input[name="login"]').click();
+    MinhaConta.digitarNomeDoUsuario(usuario);
+    MinhaConta.digitarSenhaDoUsuario(senha);
+    MinhaConta.marcarCheckLembrarLogin();
+    MinhaConta.clicarBotaoLogin();
 })
 
 Cypress.Commands.add('preCadastro', (email, senha, nome, sobreNome) => {

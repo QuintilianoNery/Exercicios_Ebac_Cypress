@@ -9,8 +9,8 @@ module.exports = defineConfig({
   chromeWebSecurity: false,
   projectId: 'fpi71k',
   titulo: "usuarioEBAC",
-  usuarioEbac: "aluno_ebac@teste.com",
-  senhaEbac: "teste@teste.com",
+  usuarioEbac: "q@q.com",
+  senhaEbac: "Ebac123456*",
 
 
   e2e: {
