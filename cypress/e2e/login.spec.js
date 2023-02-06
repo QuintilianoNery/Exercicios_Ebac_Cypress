@@ -5,7 +5,6 @@ const perfil = require('../fixtures/perfil.json');
 import HomePage from './../support/pages/home'
 import MinhaConta from './../support/pages/home/minhaConta';
 
-
 // Neste caso também podemos deixar as configurações em um arquivo Cypress.env.json
 
 //Bloco de funcionalidades
@@ -13,8 +12,6 @@ context('Funcionalidade Login', () => {
   beforeEach(() => {
     cy.visit('/')
   });
-
-  //Na parte de login, poderia ser criado um comando customizado para ser utilizado em outros testes
 
   it('Deve fazer login com sucessso - Usando arquivo de dados ', () => {
     HomePage.acessarPaginaMinhaConta();

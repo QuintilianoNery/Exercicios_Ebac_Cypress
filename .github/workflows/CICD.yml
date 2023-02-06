@@ -2,14 +2,14 @@
 
 name: EBAC-MODULO-11
 
-# Comantos de configuração. 
+# Comantos de configuração.
 on:
   # sempre que tiver um envio para origin ele vai executar estes comandos
-    # Gatilhos de execuções, podendo agendar apra um determinado horário
+  # Gatilhos de execuções, podendo agendar apra um determinado horário
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
   # Abilitar workflow manualmente
   workflow_dispatch:
@@ -20,37 +20,36 @@ jobs:
   build:
     # Executar em um windows-latest, ubuntu-latest
     runs-on: ubuntu-latest
-    
+
     # Qual versão do node vai ser utilizada
     strategy:
       matrix:
         node-version: [12.x]
-    
-    # Configurações 
+
+    # Configurações
     # Configuração que instala o node
     steps:
-        - name: Setup Node.js
-          uses: actions/setup-node@v2.1.2
-          with:
-            node-version: ${{ matrix.node-version }}
-        - uses: actions/checkout@v2
-        #comandos necessários para executar a aplicação da mesma forma que no PC
-        - run: npm install
-        
-        - run: npx cypress run --config video=true --env allure=true --browser chrome --record --key eb341f2e-ee7f-4d28-89dd-f69a4776fd5a
-        # - run: node runner.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v2.1.2
+        with:
+          node-version: ${{ matrix.node-version }}
+      - uses: actions/checkout@v2
+      #comandos necessários para executar a aplicação da mesma forma que no PC
+      - run: npm install
 
-          #Geração do relatório em HTML allure-report
-        - name: Allure report V2
-          uses: QuintilianoNery/action-allure-report-V2@0.2.0
-          with:
-            results-dir: allure-results
-            report-dir: allure-report
+      - run: npx cypress run --config video=true --env allure=true --browser chrome --record --key ad7e7e2c-7f7c-48f1-8f1c-8c8098294edc
+      # - run: node runner.js
+      #Geração do relatório em HTML allure-report
+      - name: Allure report V2
+        uses: QuintilianoNery/action-allure-report-V2@0.2.0
+        with:
+          results-dir: allure-results
+          report-dir: allure-report
 
-          #Enviar para o git hub pages
-        - name: Deploy to GitHub Pages
-          uses: JamesIves/github-pages-deploy-action@3.7.1
-          with:
-            GITHUB_TOKEN: ${{SECRETS.GITHUB_TOKEN}}
-            BRANCH: gh-pages
-            FOLDER: allure-report
+        #Enviar para o git hub pages
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{SECRETS.GITHUB_TOKEN}}
+          BRANCH: gh-pages
+          FOLDER: allure-report

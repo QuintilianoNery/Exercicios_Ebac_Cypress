@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:open": "npx cypress open ",
     "cy:reportTesults": "node runner.js",
-    "cy:reportCypress": "npx cypress run --record --key eb341f2e-ee7f-4d28-89dd-f69a4776fd5a",
+    "cy:reportCypress": "npx cypress run --record --key ad7e7e2c-7f7c-48f1-8f1c-8c8098294edc",
     "cy:reportAllure": "npx cypress run --config video=false --env allure=true --browser edge",
     "cy:allureGenerete": "allure generate allure-results",
     "cy:allureOpen": "allure open allure-report"
