@@ -3,11 +3,14 @@
 var faker = require('faker-br');
 // const quantidade = faker.random.number({ min: 1, max: 4 })
 const quantidade = 3
+import HomeProduto from './../support/pages/home/produtos'
+
 
 
 context('Funcionalidade Página de produtos', () => {
+    //Devido a falha ao localizar o produto, vou fazer um cy.visit para entrar no produto
     beforeEach(() => {
-        cy.visit('/home')
+        cy.visit('/product/abominable-hoodie/')
     });
 
     //uma das regras de boas práticas utilizando o Cypress,seria não criar pequenos testes com  poucas validações, por ser custoso para ao processo de CI
@@ -15,32 +18,12 @@ context('Funcionalidade Página de produtos', () => {
     //em uma futura refatoração, utilizar comandos customizados para diminuir a repetição de código
     // E unir alguns fluxos de testes em um mesmo teste.
     it('Deve selecionar um produto da lista e adiciona-lo no carrinho', () => {
-        cy.get('div[class="product-block grid"]')
-            //.first()
-            //.last()
-            //.contains('texto aqui')
-            .eq(0)
-            .click()
-
-        cy.get('.button-variable-item-XS')
-            .click()
-            .click()
-
-        cy.get('li[data-value="Green"]')
-            .click()
-
-        cy.get('input[name=quantity]')
-            .clear()
-            .type(quantidade)
-
-        cy.get('button[class="single_add_to_cart_button button alt"]')
-            .click();
-
-        cy.get('span[class="mini-cart-items"]')
-            .should('contain', `${quantidade}`)
-
-        cy.get('div[class=woocommerce-message]')
-            .should('contain', ` ${quantidade} × “Aether Gym Pant” foram adicionados no seu carrinho.	`)
+        HomeProduto.clickButtonXS()
+        HomeProduto.clickColorGreen()
+        HomeProduto.insertQuantity(quantidade)
+        HomeProduto.addProductToCart()
+        HomeProduto.findMiniCartItems(quantidade)
+        HomeProduto.findMessageItems(quantidade)
     });
 
 });

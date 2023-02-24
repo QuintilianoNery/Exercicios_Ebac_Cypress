@@ -25,7 +25,7 @@
   "homepage": "https://github.com/QuintilianoNery/Exercicios_Ebac_Modulo_11#readme",
   "devDependencies": {
     "@shelex/cypress-allure-plugin": "^2.28.0",
-    "cypress": "^12.4.1",
+    "cypress": "^12.6.0",
     "faker-br": "^0.4.1",
     "leite": "^0.2.0"
   },
