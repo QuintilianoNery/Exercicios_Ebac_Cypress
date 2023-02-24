@@ -35,7 +35,10 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - uses: actions/checkout@v2
       #comandos necessários para executar a aplicação da mesma forma que no PC
-      - run: npm install
+      - run: npm init -y
+      - run: npm install --yes
+      - run: npm i faker-br --dev
+      - run: npm install cypress -d
 
       - run: npx cypress run --config video=false --env allure=true --browser chrome --record --key ad7e7e2c-7f7c-48f1-8f1c-8c8098294edc
       # - run: node runner.js
