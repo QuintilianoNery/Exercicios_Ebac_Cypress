@@ -41,18 +41,3 @@ jobs:
       - run: npm install cypress -d
 
       - run: npx cypress run --record --key ad7e7e2c-7f7c-48f1-8f1c-8c8098294edc
-      # - run: node runner.js
-      #Geração do relatório em HTML allure-report
-      - name: Allure report V2
-        uses: QuintilianoNery/action-allure-report-V2@0.2.0
-        with:
-          results-dir: allure-results
-          report-dir: allure-report
-
-        #Enviar para o git hub pages
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@3.7.1
-        with:
-          GITHUB_TOKEN: ${{SECRETS.GITHUB_TOKEN}}
-          BRANCH: gh-pages
-          FOLDER: allure-report
