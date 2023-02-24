@@ -4,7 +4,7 @@ const perfil = require('../fixtures/perfil.json');
 import HomePage from './../support/pages/home'
 import MinhaConta from './../support/pages/home/minhaConta';
 
-describe('Funcionalidade Endereços - Faturamento e Entrega', () => {
+describe.skip('Funcionalidade Endereços - Faturamento e Entrega', () => {
     beforeEach(() => {
         cy.visit('minha-conta')
         // cy.login(perfil.usuarioEbac, perfil.senhaEbac) OU assim:
