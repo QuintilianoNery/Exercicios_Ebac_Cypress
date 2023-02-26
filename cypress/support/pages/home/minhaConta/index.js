@@ -23,7 +23,7 @@ class MinhaConta {
     }
 
     validarMenuMinhaContaVisivel() {
-        cy.get(ELEMENTOSMINHACONTA.menuMinhaConta).should('be.visible');
+        cy.get(ELEMENTOSMINHACONTA.menuMinhaConta).eq(3).should('be.visible').should('contain.text', 'Endereços');
     }
 
     validarMensagemErroLogin() {

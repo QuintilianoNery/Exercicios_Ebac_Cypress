@@ -30,6 +30,7 @@
     "leite": "^0.2.0"
   },
   "dependencies": {
+    "cypress-plugin-steps": "^1.0.4",
     "cypress-tesults-reporter": "^1.2.0",
     "editorconfig": "^1.0.1"
   }

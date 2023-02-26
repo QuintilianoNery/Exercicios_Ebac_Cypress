@@ -20,6 +20,9 @@ import './commands'
 // require('./commands')
 
 const allureWriter = require('@shelex/cypress-allure-plugin/writer');
-
 import '@shelex/cypress-allure-plugin';
 require('@shelex/cypress-allure-plugin');
+
+import 'cypress-plugin-steps'
+// or
+require('cypress-plugin-steps')

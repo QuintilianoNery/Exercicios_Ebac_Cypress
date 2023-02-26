@@ -18,12 +18,20 @@ context('Funcionalidade Página de produtos', () => {
     //em uma futura refatoração, utilizar comandos customizados para diminuir a repetição de código
     // E unir alguns fluxos de testes em um mesmo teste.
     it('Deve selecionar um produto da lista e adiciona-lo no carrinho', () => {
+        cy.section('Incluir produto no carrinho')
+        cy.step('Dado que o usuário identifica o produto desejado')
         HomeProduto.clickButtonXS()
         HomeProduto.clickColorGreen()
+        cy.step('Quando está na página do produto poderá escolher a cor, tamanho e quantidade')
         HomeProduto.insertQuantity(quantidade)
+        cy.step('Então deve incluir o prduto desejado no carrinho')
         HomeProduto.addProductToCart()
         HomeProduto.findMiniCartItems(quantidade)
         HomeProduto.findMessageItems(quantidade)
+
+
+
+
     });
 
 });
