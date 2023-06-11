@@ -2,7 +2,7 @@
 
 const perfil = require('../fixtures/perfil.json');
 // import HomePage from './../support/pages/home'
-import MinhaConta from './../support/pages/home/minhaConta';
+import MinhaConta from '../support/pages/home/minhaConta';
 
 const Leite = require('leite')
 const leite = new Leite()

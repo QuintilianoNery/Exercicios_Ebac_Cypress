@@ -3,7 +3,7 @@
 var faker = require('faker-br');
 // const quantidade = faker.random.number({ min: 1, max: 4 })
 const quantidade = 3
-import HomeProduto from './../support/pages/home/produtos'
+import HomeProduto from '../support/pages/home/produtos'
 
 
 
