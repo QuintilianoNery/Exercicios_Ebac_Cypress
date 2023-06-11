@@ -1,4 +1,4 @@
-export const ELEMENTOSMINHACONTA = {
+export const ELEMENTOS_MINHA_CONTA = {
     nomeDoUsuario: 'input[id="username"]',
     senhaDoUsuario: 'input[id="password"]',
     rememberme: 'input[id="rememberme"]',

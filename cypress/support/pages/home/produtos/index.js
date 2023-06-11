@@ -1,31 +1,31 @@
 /// <reference types="cypress" />
 
-import { ELEMENTOSPRODUTOS } from './elements';
+import { ELEMENTOS_PRODUTOS } from './elements';
 
 class HomeProduto {
     clickButtonXS() {
-        cy.get(ELEMENTOSPRODUTOS.buttonItemXS).click()
+        cy.get(ELEMENTOS_PRODUTOS.buttonItemXS).click()
     }
 
     clickColorGreen() {
-        cy.get(ELEMENTOSPRODUTOS.colorGreen).click()
+        cy.get(ELEMENTOS_PRODUTOS.colorGreen).click()
     }
 
     insertQuantity(quantidade) {
-        cy.get(ELEMENTOSPRODUTOS.quantityItems).clear().type(quantidade)
+        cy.get(ELEMENTOS_PRODUTOS.quantityItems).clear().type(quantidade)
     }
 
     addProductToCart() {
-        cy.get(ELEMENTOSPRODUTOS.buttonAddProductToCart).click();
+        cy.get(ELEMENTOS_PRODUTOS.buttonAddProductToCart).click();
     }
 
     findMiniCartItems(quantidade) {
-        cy.get(ELEMENTOSPRODUTOS.spanMiniCartItems)
+        cy.get(ELEMENTOS_PRODUTOS.spanMiniCartItems)
             .should('contain', `${quantidade}`)
     }
 
     findMessageItems(quantidade) {
-        cy.get(ELEMENTOSPRODUTOS.messageItems)
+        cy.get(ELEMENTOS_PRODUTOS.messageItems)
             .should('contain', ` ${quantidade} × “Abominable Hoodie” foram adicionados no seu carrinho.`)
     }
 }

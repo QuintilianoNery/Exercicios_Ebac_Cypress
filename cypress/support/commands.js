@@ -1,32 +1,5 @@
-
-// ***********************************************
-// This example commands.js shows you how to
-// create various custom commands and overwrite
-// existing commands.
-//
-// For more comprehensive examples of custom
-// commands please read more here:
-// https://on.cypress.io/custom-commands
-// ***********************************************
-//
-//
-// -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
-//
-//
-// -- This is a child command --
-// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
-//
-//
-// -- This is a dual command --
-// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
-//
-//
-// -- This will overwrite an existing command --
-// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-
-
-import MinhaConta from './pages/home/MinhaConta'
+import MinhaConta from './pages/home/minhaConta/index'
+import PreCadastro from './pages/home/preCadastro/index'
 
 Cypress.Commands.add('login', (usuario, senha) => {
     MinhaConta.digitarNomeDoUsuario(usuario);
@@ -36,16 +9,13 @@ Cypress.Commands.add('login', (usuario, senha) => {
 })
 
 Cypress.Commands.add('preCadastro', (email, senha, nome, sobreNome) => {
-    cy.get('i[class="icon-user-unfollow icons"]').click()
-    cy.get('input[id=reg_email]').type(email)
-    cy.get('input[id=reg_password]').type(senha)
-    cy.get('input[value=Register]').click()
-    //Ajustar
+    PreCadastro.clickIcone();
+    PreCadastro.preencherEmail(email);
+    PreCadastro.preencherSenha(senha);
+    PreCadastro.clickBotaoRegistrar();
     cy.visit('/minha-conta/edit-account/')
-    cy.get('.woocommerce-MyAccount-navigation-link--edit-account > a').clock()
-    cy.get('input[id="account_first_name"]').type(nome)
-    cy.get('input[id="account_last_name"]').type(sobreNome)
-    cy.get('button[name="save_account_details"]').click()
-    cy.get('div[class="woocommerce-message"]')
-        .should('contain', 'Detalhes da conta modificados com sucesso.')
+    PreCadastro.preencherNome(nome);
+    PreCadastro.preencherSobrenome(sobreNome);
+    PreCadastro.clickBotaoSalvar();
+    PreCadastro.verificarSeContemMensagemBoasVindas();
 })

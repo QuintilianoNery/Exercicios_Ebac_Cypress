@@ -1,4 +1,4 @@
-export const ELEMENTOSPRODUTOS = {
+export const ELEMENTOS_PRODUTOS = {
     buttonItemXS: '.button-variable-item-XS',
     colorGreen: 'li[data-value="Green"]',
     quantityItems: 'input[name=quantity]',
