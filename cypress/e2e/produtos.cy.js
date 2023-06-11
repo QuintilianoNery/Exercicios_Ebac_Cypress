@@ -1,7 +1,6 @@
 /// <reference types="cypress" />
 
-var faker = require('faker-br');
-// const quantidade = faker.random.number({ min: 1, max: 4 })
+// var faker = require('faker-br');
 const quantidade = 3
 import HomeProduto from '../support/pages/home/produtos'
 

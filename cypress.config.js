@@ -22,6 +22,7 @@ module.exports = defineConfig({
     baseUrl: 'http://lojaebac.ebaconline.art.br/',
     specPattern: 'cypress/e2e/**/*.{js,jsx,ts,tsx}',
   },
+  experimentalStudio: true
 
 
 })
