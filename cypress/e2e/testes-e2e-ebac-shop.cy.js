@@ -1,4 +1,9 @@
 /// <reference types="cypress" />
+var faker = require('faker-br');
+// const quantidade = faker.random.number({ min: 1, max: 4 })
+const quantidade = 4
+import HomeProduto from '../support/pages/home/produtos'
+
 
 context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
     /*  Como cliente 
@@ -14,7 +19,17 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
     });
 
     it('Deve fazer um pedido na loja Ebac Shop de ponta a ponta', () => {
-        //TODO 
+        cy.section('Incluir produto no carrinho')
+        cy.step('Dado que o usuário identifica o produto desejado')
+        HomeProduto.clickButtonXS()
+        HomeProduto.clickColorGreen()
+        cy.step('Quando está na página do produto poderá escolher a cor, tamanho e quantidade')
+        HomeProduto.insertQuantity(quantidade)
+        cy.step('Então deve incluir o prduto desejado no carrinho')
+        HomeProduto.addProductToCart()
+        HomeProduto.findMiniCartItems(quantidade)
+        HomeProduto.findMessageItems(quantidade)
+
     });
 
 
