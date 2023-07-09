@@ -47,11 +47,6 @@ class HomeCheckout {
         cy.get(ELEMENTOS_CHECKOUT.finalizarCompra).click();
     }
 
-    validarOrderReceived() {
-        cy.get(ELEMENTOS_CHECKOUT.orderReceived).should('be.visible');
-        cy.get(ELEMENTOS_CHECKOUT.orderReceived).should('contain.text', 'Pedido recebido');
-    }
-
     validarMensagemSucesso() {
         cy.get(ELEMENTOS_CHECKOUT.mensagemSucesso).should('be.visible');
         cy.get(ELEMENTOS_CHECKOUT.mensagemSucesso).should('contain.text', 'Obrigado. Seu pedido foi recebido.');

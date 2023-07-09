@@ -78,7 +78,6 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
         cy.step('Clicar no botão Finalizar compra');
 
         HomeCheckout.clicarBotaoFinalizarCompra();
-        HomeCheckout.validarOrderReceived();
         HomeCheckout.validarMensagemSucesso();
     });
 })

@@ -8,6 +8,5 @@ export const ELEMENTOS_CHECKOUT = {
     termosCondicoes: 'p[class="form-row validate-required"]',
     checkTermosCondicoes: 'input[id="terms"]',
     finalizarCompra: 'input[data-value="Finalizar compra"]',
-    orderReceived: 'h1[class="page-title"]',
     mensagemSucesso: 'div[class="woocommerce-order"] [class="woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received"]'
 };
