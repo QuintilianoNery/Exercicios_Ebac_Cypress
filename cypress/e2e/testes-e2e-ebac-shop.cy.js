@@ -2,7 +2,9 @@
 var faker = require('faker-br');
 // const quantidade = faker.random.number({ min: 1, max: 4 })
 const quantidade = 4
-import HomeProduto from '../support/pages/home/produtos'
+import HomeProduto from '../support/pages/home/produtos/index.js'
+import HomePage from '../support/pages/home/index.js'
+
 
 
 context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
@@ -19,6 +21,11 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
     });
 
     it('Deve fazer um pedido na loja Ebac Shop de ponta a ponta', () => {
+
+        HomePage.clicarBotaoPesquisar()
+        HomePage.digitarNomeProduto('abominable')
+        HomePage.pesquisarProduto()
+
         cy.section('Incluir produto no carrinho')
         cy.step('Dado que o usuário identifica o produto desejado')
         HomeProduto.clickButtonXS()
@@ -30,7 +37,9 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
         HomeProduto.findMiniCartItems(quantidade)
         HomeProduto.findMessageItems(quantidade)
 
-    });
+        HomeProduto.clicarBotaoComprar()
+        // HomePage.validarMensagemProdutoNoCarrinho()
 
+    });
 
 })

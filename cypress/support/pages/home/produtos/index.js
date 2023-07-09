@@ -28,6 +28,13 @@ class HomeProduto {
         cy.get(ELEMENTOS_PRODUTOS.messageItems)
             .should('contain', ` ${quantidade} × “Abominable Hoodie” foram adicionados no seu carrinho.`)
     }
+    validarMensagemProdutoNoCarrinho(produto) {
+        cy.get(ELEMENTOS_PRODUTOS.messageItems)
+            .should('contain', ` ${produto} × “Abominable Hoodie” foram adicionados no seu carrinho.`)
+    }
+    clicarBotaoComprar() {
+        cy.get(ELEMENTOS_PRODUTOS.botaoComprar).click();
+    }
 }
 
 export default new HomeProduto();

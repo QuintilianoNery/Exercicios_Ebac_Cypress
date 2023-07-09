@@ -4,5 +4,6 @@ export const ELEMENTOS_PRODUTOS = {
     quantityItems: 'input[name=quantity]',
     buttonAddProductToCart: 'button[class="single_add_to_cart_button button alt"]',
     spanMiniCartItems: 'span[class="mini-cart-items"]',
-    messageItems: 'div[class=woocommerce-message]'
+    messageItems: 'div[class=woocommerce-message]',
+    botaoComprar: 'button[class="single_add_to_cart_button button alt"]'
 };

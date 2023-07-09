@@ -17,6 +17,8 @@ context('Funcionalidade Página de produtos', () => {
     //em uma futura refatoração, utilizar comandos customizados para diminuir a repetição de código
     // E unir alguns fluxos de testes em um mesmo teste.
     it('Deve selecionar um produto da lista e adiciona-lo no carrinho', () => {
+
+
         cy.section('Incluir produto no carrinho')
         cy.step('Dado que o usuário identifica o produto desejado')
         HomeProduto.clickButtonXS()
