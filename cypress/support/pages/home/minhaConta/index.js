@@ -18,6 +18,10 @@ class MinhaConta {
         cy.get(ELEMENTOS_MINHA_CONTA.rememberme).click();
     }
     clicarBotaoLogin() {
+        cy.get(ELEMENTOS_MINHA_CONTA.inputLogin).click();
+    }
+
+    clicarBotaoLoginCheckout() {
         cy.get(ELEMENTOS_MINHA_CONTA.buttonLogin).click();
     }
 

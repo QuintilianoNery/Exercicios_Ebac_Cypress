@@ -5,7 +5,6 @@ Cypress.Commands.add('login', (usuario, senha) => {
     MinhaConta.digitarNomeDoUsuario(usuario);
     MinhaConta.digitarSenhaDoUsuario(senha);
     MinhaConta.marcarCheckLembrarLogin();
-    MinhaConta.clicarBotaoLogin();
 })
 
 Cypress.Commands.add('preCadastro', (email, senha, nome, sobreNome) => {

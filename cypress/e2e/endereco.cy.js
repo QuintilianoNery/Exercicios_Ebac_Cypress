@@ -25,6 +25,7 @@ describe('Funcionalidade Endereços - Faturamento e Entrega', () => {
         // cy.login(perfil.usuarioEbac, perfil.senhaEbac) OU assim:
         cy.fixture('perfil').then(dados => {
             cy.login(dados.usuarioEbac, dados.senhaEbac)
+            MinhaConta.clicarBotaoLogin();
         })
     });
 

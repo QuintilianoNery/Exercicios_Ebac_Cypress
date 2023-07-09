@@ -5,5 +5,5 @@ export const ELEMENTOS_PRODUTOS = {
     buttonAddProductToCart: 'button[class="single_add_to_cart_button button alt"]',
     spanMiniCartItems: 'span[class="mini-cart-items"]',
     messageItems: 'div[class=woocommerce-message]',
-    botaoComprar: 'button[class="single_add_to_cart_button button alt"]'
+    buttonViewCart: 'a[class="button wc-forward"]',
 };
