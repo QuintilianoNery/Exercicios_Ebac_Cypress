@@ -80,8 +80,5 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
         HomeCheckout.clicarBotaoFinalizarCompra();
         HomeCheckout.validarOrderReceived();
         HomeCheckout.validarMensagemSucesso();
-
-
     });
-
 })
