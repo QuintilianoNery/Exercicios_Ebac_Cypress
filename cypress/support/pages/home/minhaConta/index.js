@@ -25,6 +25,10 @@ class MinhaConta {
         cy.get(ELEMENTOS_MINHA_CONTA.buttonLogin).click();
     }
 
+    clicarLogoHome() {
+        cy.get(ELEMENTOS_MINHA_CONTA.imgLogoHome).click();
+    };
+
     validarUrlVisivel(url) {
         cy.url().should('be.equal', url)
     }

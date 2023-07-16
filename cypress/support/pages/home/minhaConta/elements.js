@@ -4,6 +4,7 @@ export const ELEMENTOS_MINHA_CONTA = {
     rememberme: 'input[id="rememberme"]',
     inputLogin: 'input[name="login"]',
     buttonLogin: 'button[name="login"]',
+    imgLogoHome: 'div[class="logo-in-theme col-md-3 text-center hidden-sm hidden-xs"]',
     erroLogin: 'ul[class="woocommerce-error"]',
     menuMinhaConta: 'nav[class="woocommerce-MyAccount-navigation"] a',
     contentMyAccount: 'div[class="woocommerce-MyAccount-content"]',

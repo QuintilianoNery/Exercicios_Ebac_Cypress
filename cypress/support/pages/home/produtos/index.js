@@ -3,11 +3,11 @@
 import { ELEMENTOS_PRODUTOS } from './elements';
 
 class HomeProduto {
-    clickButtonXS() {
+    clickButtonTamanho() {
         cy.get(ELEMENTOS_PRODUTOS.buttonItemXS).click()
     }
 
-    clickColorGreen() {
+    clickColor() {
         cy.get(ELEMENTOS_PRODUTOS.colorGreen).click()
     }
 

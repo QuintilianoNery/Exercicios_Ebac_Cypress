@@ -22,10 +22,6 @@ class HomeCheckout {
         cy.get(ELEMENTOS_CHECKOUT.checkoutTotal).should('contain', quantidade * precoUnitario);
     }
 
-    clicarBotaoMostrarLogin() {
-        cy.get(ELEMENTOS_CHECKOUT.mostrarLogin).click();
-    }
-
     clicarPagamentoEntrega() {
         cy.get(ELEMENTOS_CHECKOUT.pagamentoEntrega).click();
     }
