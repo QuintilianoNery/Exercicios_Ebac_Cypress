@@ -2,7 +2,7 @@
 
 // var faker = require('faker-br');
 const quantidade = 3
-import HomeProduto from '../support/pages/home/produtos'
+import HomeProduto from '../../support/pages/home/produtos'
 
 
 

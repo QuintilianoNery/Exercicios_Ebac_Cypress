@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-const perfil = require('../fixtures/perfil.json');
+const perfil = require('../../fixtures/perfil.json');
 
 //Faker-br
 var faker = require('faker-br');

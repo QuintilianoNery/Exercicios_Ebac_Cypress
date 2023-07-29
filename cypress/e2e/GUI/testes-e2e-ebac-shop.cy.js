@@ -1,10 +1,10 @@
 /// <reference types="cypress" />
 
-const perfil = require('../fixtures/perfil.json');
-import HomeProduto from '../support/pages/home/produtos/index.js'
-import HomePage from '../support/pages/home/index.js'
-import HomeCarrinho from '../support/pages/home/carrinho/index.js'
-import HomeCheckout from '../support/pages/home/carrinho/checkout/index.js'
+const perfil = require('../../fixtures/perfil.json');
+import HomeProduto from '../../support/pages/home/produtos/index.js'
+import HomePage from '../../support/pages/home/index.js'
+import HomeCarrinho from '../../support/pages/home/carrinho/index.js'
+import HomeCheckout from '../../support/pages/home/carrinho/checkout/index.js'
 
 const produtoInfo = {
     nome: 'abominable',

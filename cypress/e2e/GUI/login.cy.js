@@ -1,9 +1,9 @@
 /// <reference types="Cypress" />
 
-const perfil = require('../fixtures/perfil.json');
+const perfil = require('../../fixtures/perfil.json');
 
-import HomePage from '../support/pages/home'
-import MinhaConta from '../support/pages/home/minhaConta';
+import HomePage from '../../support/pages/home'
+import MinhaConta from '../../support/pages/home/minhaConta';
 
 // Neste caso também podemos deixar as configurações em um arquivo Cypress.env.json
 
