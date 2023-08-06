@@ -30,10 +30,9 @@
     "leite": "^0.2.0"
   },
   "dependencies": {
+    "chance": "^1.1.11",
     "cypress-plugin-steps": "^1.0.4",
     "cypress-tesults-reporter": "^1.2.0",
-    "editorconfig": "^1.0.1",
-    "eslint": "^8.46.0",
-    "eslint-plugin-cypress": "^2.13.3"
+    "editorconfig": "^1.0.1"
   }
 }

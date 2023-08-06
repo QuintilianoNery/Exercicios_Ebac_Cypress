@@ -16,25 +16,6 @@ before(function () {
 
 describe('API ServeRest', function () {
 
-    context('URI login', function () {
-        it('Deve fazer login com sucesso', function () {
-            cy.request({
-                method: 'POST',
-                url: `${url}/login`,
-                body: {
-                    'email': this.emailPrimeiroUsuario,
-                    'password': this.passwordPrimeiroUsuario
-                }
-            }).then((response) => {
-                expect(response.status).to.equal(200);
-                expect(response.body.message).to.eq('Login realizado com sucesso');
-                const token = response.body.authorization;
-                cy.wrap(token, { log: false }).as('token');
-            });
-        });
-
-    });
-
     context('URI usuários', function () {
         it('Cadastrar usuários', function () {
             cy.request({
@@ -99,21 +80,4 @@ describe('API ServeRest', function () {
         });
     });
 
-    context('URI produtos', function () {
-        it('Buscar produtos cadastrados', function () {
-            cy.request({
-                method: 'GET',
-                url: `${url}/produtos`
-            }).then((response) => {
-                expect(response.status).to.eq(200);
-                cy.log(response.body.produtos);
-            });
-        });
-    });
-
-    context('URI carrinhos', () => {
-        it('Buscar carrinhos cadastrados', () => {
-
-        });
-    });
 });
