@@ -27,28 +27,22 @@ describe('API ServeRest', function () {
             });
         });
 
-        it.only('teste token', function () {
-            cy.log(this.token);
-        })
+        it('Cadastrar produto', function () {
+            let produto = `Produto teste ${Math.floor(Math.random() * 10000000)}`
 
-        it.only('Cadastrar produto', function () {
-            cy.request({
-                method: 'POST',
-                url: `${url}/produtos`,
+            cy.cadastrarProdutoApi(this.token, produto, 470, "Mouse", 381)
+                .then((response) => {
+                    expect(response.status).to.eq(201);
+                    expect(response.body.message).to.eq('Cadastro realizado com sucesso');
+                });
+        });
 
-                body: {
-                    "nome": "Produto Novo teste teste3",
-                    "preco": 470,
-                    "descricao": "Mouse",
-                    "quantidade": 381
-                },
-                headers: {
-                    authorization: this.token
-                }
-            }).then((response) => {
-                expect(response.status).to.eq(201);
-                expect(response.body.message).to.eq('Cadastro realizado com sucesso');
-            });
+        it('Deve validar cadastro de produto já existente na base', function () {
+            cy.cadastrarProdutoApi(this.token, "Produto teste 1", 470, "Mouse", 381)
+                .then((response) => {
+                    expect(response.status).to.eq(400);
+                    expect(response.body.message).to.eq("Já existe produto com esse nome");
+                });
         });
     });
 });

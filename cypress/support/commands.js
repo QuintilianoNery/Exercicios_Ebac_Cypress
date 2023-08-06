@@ -113,6 +113,21 @@ Cypress.Commands.add('loginApiToken', function () {
   }).then((response) => {
     expect(response.status).to.equal(200);
     const token = response.body.authorization;
-    cy.wrap(token).as('token');
+    cy.wrap(token, { log: false }).as('token');
   });
 })
+
+Cypress.Commands.add('cadastrarProdutoApi', function (token, produto, preco, descricao, quantidade) {
+  cy.request({
+    method: 'POST',
+    url: `${url}/produtos`,
+    headers: { authorization: this.token, },
+    body: {
+      "nome": produto,
+      "preco": preco,
+      "descricao": descricao,
+      "quantidade": quantidade
+    },
+    failOnStatusCode: false
+  })
+});
