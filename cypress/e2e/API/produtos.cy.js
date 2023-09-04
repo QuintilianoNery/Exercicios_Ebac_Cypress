@@ -30,7 +30,7 @@ describe('API ServeRest', function () {
         it('Cadastrar produto', function () {
             let produto = `Produto teste ${Math.floor(Math.random() * 10000000)}`
 
-            cy.cadastrarProdutoApi(this.token, produto, 470, "Mouse", 381)
+            cy.cadastrarProdutoApi('POST', this.token, produto, 470, "Mouse", 381)
                 .then((response) => {
                     expect(response.status).to.eq(201);
                     expect(response.body.message).to.eq('Cadastro realizado com sucesso');
@@ -38,11 +38,21 @@ describe('API ServeRest', function () {
         });
 
         it('Deve validar cadastro de produto já existente na base', function () {
-            cy.cadastrarProdutoApi(this.token, "Produto teste 1", 470, "Mouse", 381)
+            cy.cadastrarProdutoApi('POST', this.token, "Produto teste 1", 470, "Mouse", 381)
                 .then((response) => {
                     expect(response.status).to.eq(400);
                     expect(response.body.message).to.eq("Já existe produto com esse nome");
                 });
         });
+
+        it.only('Deve editar produto', function () {
+            let produto = `Produto teste ${Math.floor(Math.random() * 10000000)}`
+            cy.cadastrarProdutoApi('PUT', this.token, produto, 470, "Mouse", 381)
+                .then((response) => {
+                    expect(response.status).to.eq(200);
+                    expect(response.body.message).to.eq("Registro alterado com sucesso");
+                });
+        });
+
     });
 });

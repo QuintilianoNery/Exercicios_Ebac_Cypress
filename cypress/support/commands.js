@@ -117,9 +117,9 @@ Cypress.Commands.add('loginApiToken', function () {
   });
 })
 
-Cypress.Commands.add('cadastrarProdutoApi', function (token, produto, preco, descricao, quantidade) {
+Cypress.Commands.add('cadastrarProdutoApi', function (method, token, produto, preco, descricao, quantidade) {
   cy.request({
-    method: 'POST',
+    method: method,
     url: `${url}/produtos`,
     headers: { authorization: this.token, },
     body: {
@@ -131,3 +131,4 @@ Cypress.Commands.add('cadastrarProdutoApi', function (token, produto, preco, des
     failOnStatusCode: false
   })
 });
+
