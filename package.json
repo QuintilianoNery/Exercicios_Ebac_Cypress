@@ -9,7 +9,8 @@
     "cy:dashCypressClound": "npx cypress run --record --key ad7e7e2c-7f7c-48f1-8f1c-8c8098294edc",
     "cy:reportAllure": "npx cypress run --config video=false --env allure=true --browser edge",
     "cy:allureGenerete": "allure generate allure-results",
-    "cy:allureOpen": "allure open allure-report"
+    "cy:allureOpen": "allure open allure-report",
+    "eslint:fix": "eslint --fix \"cypress/**/*.js\""
   },
   "repository": {
     "type": "git",
@@ -24,11 +25,12 @@
   "homepage": "https://github.com/QuintilianoNery/Exercicios_Ebac_Modulo_11#readme",
   "devDependencies": {
     "@shelex/cypress-allure-plugin": "^2.28.0",
-    "cypress": "12.14.0",
+    "cypress": "^12.14.0",
     "faker-br": "^0.4.1",
     "leite": "^0.2.0"
   },
   "dependencies": {
+    "chance": "^1.1.11",
     "cypress-plugin-steps": "^1.0.4",
     "cypress-tesults-reporter": "^1.2.0",
     "editorconfig": "^1.0.1"

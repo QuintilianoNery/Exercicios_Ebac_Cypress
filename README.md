@@ -1,4 +1,4 @@
-<h1 align="center">Exercício EBAC Módulo 11 - Automação UI com cypress</h1>
+<h1 align="center">Exercício EBAC Testes de API e GUI</h1>
 
 ---
 
