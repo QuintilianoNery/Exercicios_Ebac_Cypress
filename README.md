@@ -1,8 +1,10 @@
 <h1 align="center">Exercício EBAC Testes de API e GUI</h1>
 
----
+<p align="center"><img src="img/servrest.png" width="80%"/></p>
 
-## Configurando o Ambiente :gear:
+--------
+
+## Configurando o Ambiente :gear
 
 - [Cypress.io](http://www.cypress.io)
 
@@ -20,30 +22,51 @@ Na pasta do projeto abra o terminal ou no VSCode use o Ctrl + ' (aspas simples),
 ```shell
 npm init -y
 npm install --yes
-npm install cypress -d
-npm i faker-br --dev
+npm install cypress@12.17.4 -d
 ```
 
-### Comandos para iniciar o Cypress :gear:
+### Comandos para iniciar o Cypress :gear
 
-#### Iniciar o Cypress no navegador:
+#### Iniciar o Cypress no navegador
 
 ```shell
    npx cypress open
 ```
 
-#### Para executar em modo headless:
+#### Para executar em modo headless
 
 ```shell
    npx cypress run
 ```
 
-#### Dependências
-```
-    "@shelex/cypress-allure-plugin": "^2.28.0",
-    "cypress": "^10.3.0",
-    "faker-br": "^0.4.1",
-    "leite": "^0.2.0"
-    "cypress-tesults-reporter": "^1.2.0"
+### Testes de API
+
+#### Instalação da ferramenta Rancher Desktop, para gerenciamento do container API ServRest
+
+Baixe preferencialmente a versão 1.8.1, pois tenho certeza de ser uma versão estável.
+
+- [Versão Rancher Desktop 1.8.1](https://github.com/rancher-sandbox/rancher-desktop/releases/download/v1.8.1/Rancher.Desktop.Setup.1.8.1.msi)
+
+#### Instale normalmente o Rancher Desktop, após isso realize a seguinte configuração
+
+#### Passo 1 - Desmarcar atualização automática
+
+<p align="center"><img src="img/1.png" width="100%"/></p>
+
+#### Passo 2 - Configurar o Rancher Desktop para usar o Docker CLI
+
+<p align="center"><img src="img/2.png" width="100%"/></p>
+
+#### Passo 3 - Usar a versãoestável do Kubernetes
+
+<p align="center"><img src="img/3.png" width="100%"/></p>
+
+Após realizar estas configurações, certifique-se que o Rancher Desktop esteja rodando
+
+### Criando container API ServRest e executando localmente
 
 ```
+docker run -p 3000:3000 paulogoncalvesbh/serverest:latest
+```
+
+- Após ter criado a cópia para executar o ServRest localmente, pode acessar localmente o endereço <http://localhost:3000>
