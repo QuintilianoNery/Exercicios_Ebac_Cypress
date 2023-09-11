@@ -9,9 +9,11 @@ const senha = `${nome}.${sobrenome}`;
 
 const url = 'localhost:3000';
 let token;
+let idProduto;
 before(function () {
     cy.buscarUsuario(0);
     cy.loginApiToken().then(tkn => { token = tkn });
+    cy.buscarIdProdutos(0).then(id => { idProduto = id });
 });
 
 describe('API ServeRest', function () {
@@ -45,9 +47,10 @@ describe('API ServeRest', function () {
                 });
         });
 
-        it.only('Deve editar produto', function () {
+        it('Deve editar produto', function () {
             let produto = `Produto teste ${Math.floor(Math.random() * 10000000)}`
-            cy.cadastrarProdutoApi('PUT', this.token, produto, 470, "Mouse", 381)
+            cy.editarProdutoApi('PUT', this.token, produto, 220, "Mouse", 381)
+
                 .then((response) => {
                     expect(response.status).to.eq(200);
                     expect(response.body.message).to.eq("Registro alterado com sucesso");

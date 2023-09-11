@@ -83,6 +83,17 @@ Cypress.Commands.add('cadastrarProduto', (token, produto, preco, descricao, quan
   });
 });
 
+Cypress.Commands.add('buscarIdProdutos', (position) => {
+  cy.request({
+    method: 'GET',
+    url: `${url}/produtos`
+  }).then((response) => {
+    const idPrimeiroProduto = (response.body.produtos[position]._id);
+    cy.wrap(idPrimeiroProduto).as('idPrimeiroProduto');
+  })
+});
+
+
 Cypress.Commands.add('buscarUsuario', function (position) {
   cy.request({
     method: 'GET',
@@ -132,3 +143,17 @@ Cypress.Commands.add('cadastrarProdutoApi', function (method, token, produto, pr
   })
 });
 
+Cypress.Commands.add('editarProdutoApi', function (method, token, produto, preco, descricao, quantidade) {
+  cy.request({
+    method: method,
+    url: `${url}/produtos/${this.idPrimeiroProduto}`,
+    headers: { authorization: this.token, },
+    body: {
+      "nome": produto,
+      "preco": preco,
+      "descricao": descricao,
+      "quantidade": quantidade
+    },
+    failOnStatusCode: false
+  })
+});
