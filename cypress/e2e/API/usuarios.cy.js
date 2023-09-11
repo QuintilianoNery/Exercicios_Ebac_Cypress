@@ -17,7 +17,7 @@ before(function () {
 describe('API ServeRest', function () {
 
     context('URI usuários', function () {
-        it('Cadastrar usuários', function () {
+        it('Deve cadastrar um usuário com sucesso', function () {
             cy.request({
                 method: 'POST',
                 url: `${url}/usuarios`,
@@ -33,7 +33,7 @@ describe('API ServeRest', function () {
             });
         });
 
-        it('Buscar usuários cadastrados', () => {
+        it('Deve listar usuários cadastrados', () => {
             cy.request({
                 method: 'GET',
                 url: 'localhost:3000/usuarios'
@@ -43,7 +43,7 @@ describe('API ServeRest', function () {
             });
         });
 
-        it('Buscar usuário por ID', function () {
+        it('Deve buscar um usuário previamente cadastrado por ID', function () {
             cy.request({
                 method: 'GET',
                 url: `${url}/usuarios/${this.idPrimeiroUsuario}`
@@ -52,7 +52,7 @@ describe('API ServeRest', function () {
             });
         });
 
-        it('Editar usuário por ID', function () {
+        it('Deve editar um usuário previamente cadastrado', function () {
             cy.request({
                 method: 'PUT',
                 url: `${url}/usuarios/${this.idPrimeiroUsuario}`,
@@ -69,7 +69,7 @@ describe('API ServeRest', function () {
             );
         });
 
-        it('Deletar usuário por ID', function () {
+        it('Deve deletar um usuário previamente cadastrado', function () {
             cy.request({
                 method: 'DELETE',
                 url: `${url}/usuarios/${this.idPrimeiroUsuario}`
@@ -78,6 +78,26 @@ describe('API ServeRest', function () {
                 expect(response.body.message).to.eq('Registro excluído com sucesso');
             });
         });
+        it.only('Deve validar contrato de usuários', () => {
+            cy.request({
+                method: 'GET',
+                url: `${url}/usuarios`
+            }).then((response) => {
+                expect(response.status).to.eq(200);
+                const contratoEsperado = {
+                    usuarios: [{
+                        nome: String,
+                        email: String,
+                        password: String,
+                        administrador: String,
+                        _id: String,
+                    }]
+                };
+                expect(response.body.usuarios[0]).to.deep.eq(contratoEsperado.usuarios[0]);
+            });
+        });
+
+
     });
 
 });
