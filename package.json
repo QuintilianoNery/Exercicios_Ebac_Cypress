@@ -4,12 +4,13 @@
   "description": "Automação UI com cypress",
   "main": "index.js",
   "scripts": {
+    "docker:start": "docker run -p 3000:3000 paulogoncalvesbh/serverest:latest",
     "cy:open": "npx cypress open ",
     "cy:reportTesults": "node runner.js",
     "cy:dashCypressClound": "npx cypress run --record --key ad7e7e2c-7f7c-48f1-8f1c-8c8098294edc",
-    "cy:reportAllure": "npx cypress run --config video=false --env allure=true --browser edge",
-    "cy:allureGenerete": "allure generate allure-results",
-    "cy:allureOpen": "allure open allure-report",
+    "cy:[01]reportAllure": "npx cypress run --config video=false --env allure=true --browser edge",
+    "cy:[02]allureGenerete": "allure generate allure-results",
+    "cy:[03]allureOpen": "allure open allure-report",
     "eslint:fix": "eslint --fix \"cypress/**/*.js\""
   },
   "repository": {
@@ -33,6 +34,7 @@
     "chance": "^1.1.11",
     "cypress-plugin-steps": "^1.0.4",
     "cypress-tesults-reporter": "^1.2.0",
-    "editorconfig": "^1.0.1"
+    "editorconfig": "^1.0.1",
+    "joi": "^17.10.1"
   }
 }

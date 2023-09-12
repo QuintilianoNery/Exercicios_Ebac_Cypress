@@ -78,7 +78,8 @@ describe('API ServeRest', function () {
                 expect(response.body.message).to.eq('Registro excluído com sucesso');
             });
         });
-        it.only('Deve validar contrato de usuários', () => {
+
+        it('Deve validar contrato de usuários', () => {
             cy.request({
                 method: 'GET',
                 url: `${url}/usuarios`
@@ -93,7 +94,7 @@ describe('API ServeRest', function () {
                         _id: String,
                     }]
                 };
-                expect(response.body.usuarios[0]).to.deep.eq(contratoEsperado.usuarios[0]);
+                expect(response.body.usuarios[0]).be.eq(contratoEsperado.usuarios[0]);
             });
         });
 

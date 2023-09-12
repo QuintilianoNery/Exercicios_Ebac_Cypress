@@ -88,8 +88,8 @@ Cypress.Commands.add('buscarIdProdutos', (position) => {
     method: 'GET',
     url: `${url}/produtos`
   }).then((response) => {
-    const idPrimeiroProduto = (response.body.produtos[position]._id);
-    cy.wrap(idPrimeiroProduto).as('idPrimeiroProduto');
+    const idProduto = (response.body.produtos[position]._id);
+    cy.wrap(idProduto).as('idProduto');
   })
 });
 
@@ -143,10 +143,10 @@ Cypress.Commands.add('cadastrarProdutoApi', function (method, token, produto, pr
   })
 });
 
-Cypress.Commands.add('editarProdutoApi', function (method, token, produto, preco, descricao, quantidade) {
+Cypress.Commands.add('editarProdutoApi', function (method, token, produto, preco, descricao, quantidade, idProduto) {
   cy.request({
     method: method,
-    url: `${url}/produtos/${this.idPrimeiroProduto}`,
+    url: `${url}/produtos/${this.idProduto}` || idProduto,
     headers: { authorization: this.token, },
     body: {
       "nome": produto,
