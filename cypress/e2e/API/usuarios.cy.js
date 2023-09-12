@@ -5,6 +5,7 @@ const leite = new Leite();
 const nome = leite.pessoa.nome();
 const sobrenome = leite.pessoa.nome();
 const email = leite.pessoa.email();
+const emailInvalido = 'teste.com';
 const senha = `${nome}.${sobrenome}`;
 
 const url = 'localhost:3000';
@@ -17,7 +18,7 @@ before(function () {
 describe('API ServeRest', function () {
 
     context('URI usuários', function () {
-        it.only('Deve cadastrar um usuário com sucesso', function () {
+        it('Deve cadastrar um usuário com sucesso', function () {
             cy.request({
                 method: 'POST',
                 url: `${url}/usuarios`,
@@ -98,6 +99,21 @@ describe('API ServeRest', function () {
             });
         });
 
+        it('Deve cadastrar um usuário e-mail inválido', function () {
+            cy.request({
+                method: 'POST',
+                url: `${url}/usuarios`,
+                body: {
+                    'nome': nome,
+                    'email': emailInvalido,
+                    'password': senha,
+                    'administrador': 'true'
+                }
+            }).then((response) => {
+                expect(response.status).to.eq(400);
+                expect(response.body.message).to.eq('email deve ser um email válido');
+            });
+        });
 
     });
 

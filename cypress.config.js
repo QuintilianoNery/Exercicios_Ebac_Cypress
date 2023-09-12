@@ -19,6 +19,14 @@ module.exports = defineConfig({
     },
     baseUrl: 'http://lojaebac.ebaconline.art.br/',
     specPattern: 'cypress/e2e/**/*.{js,jsx,ts,tsx}',
+    "reporter": "mochawesome",
+    "reporterOptions": {
+      "reportDir": "mochawesome-report",
+      "overwrite": false,
+      "html": false,
+      "json": true,
+    },
+
   },
   experimentalStudio: true
 

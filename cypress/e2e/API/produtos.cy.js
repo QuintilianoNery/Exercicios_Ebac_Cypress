@@ -2,7 +2,7 @@
 const Leite = require('leite');
 const leite = new Leite();
 import contrato from '../contracts/produtos.contract';
-const baseUrl = 'localhost:3000';
+const url = 'localhost:3000';
 
 // const nome = leite.pessoa.nome();
 // const sobrenome = leite.pessoa.nome();
@@ -34,7 +34,7 @@ describe('API ServeRest', function () {
         it('Buscar produtos cadastrados', function () {
             cy.request({
                 method: 'GET',
-                url: `${baseUrl}/produtos`
+                url: `${url}/produtos`
             }).then((response) => {
                 expect(response.status).to.eq(200);
                 expect(response.body).to.have.property('produtos');
@@ -66,7 +66,7 @@ describe('API ServeRest', function () {
                     let id = response.body._id;
                     cy.request({
                         method: 'PUT',
-                        url: `${baseUrl}/produtos/${id}`,
+                        url: `${url}/produtos/${id}`,
                         headers: { authorization: token },
                         body: {
                             'nome': produto,
@@ -88,7 +88,7 @@ describe('API ServeRest', function () {
                     let id = response.body._id;
                     cy.request({
                         method: 'DELETE',
-                        url: `${baseUrl}/produtos/${id}`,
+                        url: `${url}/produtos/${id}`,
                         headers: { authorization: token },
                     }).then((response) => {
                         expect(response.status).to.eq(200);
