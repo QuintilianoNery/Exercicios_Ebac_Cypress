@@ -1,6 +1,6 @@
 <h1 align="center">Exercício EBAC Testes de API e GUI</h1>
 
-<p align="center"><img src="img/servrest.png" width="80%"/></p>
+<p align="center"><img src="img/ebac.png" width="80%"/></p>
 
 --------
 
