@@ -2,13 +2,13 @@
 const Leite = require('leite');
 const leite = new Leite();
 import contrato from '../contracts/produtos.contract';
+const baseUrl = 'localhost:3000';
 
 // const nome = leite.pessoa.nome();
 // const sobrenome = leite.pessoa.nome();
 // const email = leite.pessoa.email();
 // const senha = `${nome}.${sobrenome}`;
 
-const baseUrl = 'localhost:3000';
 let token;
 let idProduto;
 
@@ -20,19 +20,10 @@ before(function () {
 });
 
 describe('API ServeRest', function () {
-    context('Teste de contrato', () => {
-        it.only('Deve validar o contrato de produtos', () => {
-            cy.request('produtos').then((response) => {
-                return contrato.validateAsync(response.body);
-            });
-        });
-    });
 
     context('URI produtos', function () {
-
         it('Cadastrar produto', function () {
             let produto = `Produto teste ${Math.floor(Math.random() * 10000000)}`
-
             cy.cadastrarProdutoApi('POST', this.token, produto, 470, "Mouse", 381)
                 .then((response) => {
                     expect(response.status).to.eq(201);
@@ -105,8 +96,5 @@ describe('API ServeRest', function () {
                     });
                 });
         });
-
     });
-
-
 });

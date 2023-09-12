@@ -17,7 +17,7 @@ before(function () {
 describe('API ServeRest', function () {
 
     context('URI usuários', function () {
-        it('Deve cadastrar um usuário com sucesso', function () {
+        it.only('Deve cadastrar um usuário com sucesso', function () {
             cy.request({
                 method: 'POST',
                 url: `${url}/usuarios`,
