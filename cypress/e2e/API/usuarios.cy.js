@@ -99,7 +99,7 @@ describe('API ServeRest', function () {
             });
         });
 
-        it('Deve cadastrar um usuário e-mail inválido', function () {
+        it('Deve validar um usuário com email inválido', function () {
             cy.request({
                 method: 'POST',
                 url: `${url}/usuarios`,
