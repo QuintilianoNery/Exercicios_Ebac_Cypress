@@ -33,7 +33,7 @@ jobs:
         uses: actions/setup-node@v3.8.1
         with:
           node-version: ${{ matrix.node-version }}
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4.0.0
       #comandos necessários para executar a aplicação da mesma forma que no PC
       - run: npm init -y
       - run: npm install --yes
