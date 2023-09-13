@@ -2,12 +2,12 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "children" : [ {
     "name" : "Oops...we found an error preparing this test file: cypress/e2e/GUI/testes-e2e-ebac-shop.cy.js",
-    "uid" : "35077d15e74ab386",
+    "uid" : "fd4260d40bda989b",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "broken",
     "time" : {
-      "start" : 1694613520262,
-      "stop" : 1694613520262,
+      "start" : 1694614291331,
+      "stop" : 1694614291331,
       "duration" : 0
     },
     "flaky" : false,

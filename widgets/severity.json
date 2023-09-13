@@ -1,9 +1,9 @@
 [ {
-  "uid" : "35077d15e74ab386",
+  "uid" : "fd4260d40bda989b",
   "name" : "Oops...we found an error preparing this test file: cypress/e2e/GUI/testes-e2e-ebac-shop.cy.js",
   "time" : {
-    "start" : 1694613520262,
-    "stop" : 1694613520262,
+    "start" : 1694614291331,
+    "stop" : 1694614291331,
     "duration" : 0
   },
   "status" : "broken",
