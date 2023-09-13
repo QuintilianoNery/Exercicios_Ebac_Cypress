@@ -45,8 +45,7 @@ jobs:
       - run: npm install --yes
       - run: npm i faker-br --dev
       - run: npm install cypress -d
-      - name: Execute Test
-        run: npx cypress run --config video=false --env allure=true --record --key ad7e7e2c-7f7c-48f1-8f1c-8c8098294edc
+      - run: npx cypress run --config video=false --env allure=true --record --key ad7e7e2c-7f7c-48f1-8f1c-8c8098294edc
         continue-on-error: true
 
       # - run: node runner.js
