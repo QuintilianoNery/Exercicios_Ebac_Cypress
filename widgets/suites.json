@@ -1,45 +1,12 @@
 {
-  "total" : 4,
+  "total" : 1,
   "items" : [ {
-    "uid" : "d4bed7531f3e23b20bc49952ef599ad2",
-    "name" : "Funcionalidade Login",
+    "uid" : "bb93992bef5f42c2cb25b86a32030b2b",
+    "name" : "cypress/e2e/GUI/testes-e2e-ebac-shop.cy.js",
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 5,
-      "unknown" : 0,
-      "total" : 5
-    }
-  }, {
-    "uid" : "08618982288f7cc98252c0dfdbe189bd",
-    "name" : "Funcionalidade Endereços - Faturamento e Entrega",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    }
-  }, {
-    "uid" : "a06a8689995127853897fa5e87b697eb",
-    "name" : "Funcionalidade Pré Cadasstro",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 1
-    }
-  }, {
-    "uid" : "36dfd847c79960cd366e358cb914bb3a",
-    "name" : "Funcionalidade Página de produtos",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 1,
       "passed" : 0,
       "unknown" : 0,
       "total" : 1

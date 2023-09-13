@@ -1,5 +1,26 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Oops...we found an error preparing this test file:\n\n  > cypress/e2e/GUI/testes-e2e-ebac-shop.cy.js\n\n",
+      "children" : [ {
+        "name" : "Oops...we found an error preparing this test file: cypress/e2e/GUI/testes-e2e-ebac-shop.cy.js",
+        "uid" : "b1ca3b7fb741e6cf",
+        "parentUid" : "a7a2809126692ef3ef50fd47b909be2f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1694611105863,
+          "stop" : 1694611105863,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a7a2809126692ef3ef50fd47b909be2f"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
   "name" : "categories"
 }

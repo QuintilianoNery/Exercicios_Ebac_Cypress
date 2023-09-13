@@ -1,105 +1,14 @@
 {
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "children" : [ {
-    "name" : "Deve fazer cadastro de faturamento com sucesso",
-    "uid" : "6fa3474b76d895b6",
+    "name" : "Oops...we found an error preparing this test file: cypress/e2e/GUI/testes-e2e-ebac-shop.cy.js",
+    "uid" : "b1ca3b7fb741e6cf",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
+    "status" : "broken",
     "time" : {
-      "start" : 1666839749763,
-      "stop" : 1666839763344,
-      "duration" : 13581
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "Deve fazer login com sucessso - Usando arquivo de dados",
-    "uid" : "3713fedf77ea9358",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1666839770148,
-      "stop" : 1666839784448,
-      "duration" : 14300
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "Deve fazer login com sucessso - Usando cypress.env.json",
-    "uid" : "5b460faa38e983fa",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1666839785408,
-      "stop" : 1666839790719,
-      "duration" : 5311
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "Deve fazer login com sucessso - Usando fixture",
-    "uid" : "2a1843a0aaaf210b",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1666839791569,
-      "stop" : 1666839796999,
-      "duration" : 5430
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "Deve exibir uma mensagem de erro ao insserir um usuário inválido",
-    "uid" : "8d6f00bb33c02008",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1666839797915,
-      "stop" : 1666839802675,
-      "duration" : 4760
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "Deve exibir uma mensagem de erro ao insserir senha inválida",
-    "uid" : "e04fc2c28a7b09e3",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1666839803601,
-      "stop" : 1666839808458,
-      "duration" : 4857
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "Deve completar o pré-cadastro com sucesso usando Comandos customizados",
-    "uid" : "cb773175f1ea4554",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1666839825872,
-      "stop" : 1666839847858,
-      "duration" : 21986
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "Deve selecionar um produto da lista e adiciona-lo no carrinho",
-    "uid" : "e8923ce16963c7a4",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "skipped",
-    "time" : {
-      "start" : 1666839862565,
-      "stop" : 1666839862570,
-      "duration" : 5
+      "start" : 1694611105863,
+      "stop" : 1694611105863,
+      "duration" : 0
     },
     "flaky" : false,
     "newFailed" : false,
