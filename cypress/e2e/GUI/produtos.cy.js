@@ -18,8 +18,8 @@ context('Funcionalidade Página de produtos', () => {
 
     cy.section('Incluir produto no carrinho');
     cy.step('Dado que o usuário identifica o produto desejado');
-    HomeProduto.clickButtonXS();
-    HomeProduto.clickColorGreen();
+    HomeProduto.clickButtonTamanho();
+    HomeProduto.clickColor();
     cy.step('Quando está na página do produto poderá escolher a cor, tamanho e quantidade');
     HomeProduto.insertQuantity(quantidade);
     cy.step('Então deve incluir o prduto desejado no carrinho');
