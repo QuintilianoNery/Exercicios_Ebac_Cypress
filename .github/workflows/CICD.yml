@@ -30,8 +30,10 @@ jobs:
     # Configuração que instala o node
     steps:
       - uses: actions/checkout@v3
-      - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag paulogoncalvesbh/serverest:latest
+      - name: Iniciar o Container Docker
+        run: |
+          docker run -d -p 3000:3000 paulogoncalvesbh/serverest:latest
+          sleep 7
         
       - name: Setup Node.js
         uses: actions/setup-node@v3.8.1
@@ -39,7 +41,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - uses: actions/checkout@v4.0.0
       #comandos necessários para executar a aplicação da mesma forma que no PC
-      - run: docker run -p 3000:3000 paulogoncalvesbh/serverest:latest
       - run: npm init -y
       - run: npm install --yes
       - run: npm i faker-br --dev
