@@ -13,7 +13,6 @@ const produtoInfo = {
   quantidade: 4,
   precoUnitario: 69,
   produtoSelecionado: 'Abominable Hoodie - XS, Green',
-  perfil: require('../fixtures/perfil.json')
 };
 context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
 
@@ -56,3 +55,4 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
     HomeCheckout.validarMensagemSucesso();
   });
 });
+

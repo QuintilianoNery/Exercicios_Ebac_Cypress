@@ -18,7 +18,7 @@ module.exports = defineConfig({
       allureWriter(on, config)
     },
     baseUrl: 'http://lojaebac.ebaconline.art.br/',
-    specPattern: 'cypress/e2e/**/*.{js,jsx,ts,tsx}',
+    specPattern: 'cypress/e2e/**/*.{js,json,jsx,ts,tsx}',
   },
   experimentalStudio: true
 
