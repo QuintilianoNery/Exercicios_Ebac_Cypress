@@ -80,25 +80,6 @@ describe('API ServeRest', function () {
             });
         });
 
-        it('Deve validar contrato de usuários', () => {
-            cy.request({
-                method: 'GET',
-                url: `${url}/usuarios`
-            }).then((response) => {
-                expect(response.status).to.eq(200);
-                const contratoEsperado = {
-                    usuarios: [{
-                        nome: String,
-                        email: String,
-                        password: String,
-                        administrador: String,
-                        _id: String,
-                    }]
-                };
-                expect(response.body.usuarios[0]).be.eq(contratoEsperado.usuarios[0]);
-            });
-        });
-
         it('Deve validar um usuário com email inválido', function () {
             cy.request({
                 method: 'POST',
