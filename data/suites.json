@@ -4,12 +4,12 @@
     "name" : "cypress/e2e/GUI/testes-e2e-ebac-shop.cy.js",
     "children" : [ {
       "name" : "Oops...we found an error preparing this test file: cypress/e2e/GUI/testes-e2e-ebac-shop.cy.js",
-      "uid" : "e09a5447203e195a",
+      "uid" : "35077d15e74ab386",
       "parentUid" : "bb93992bef5f42c2cb25b86a32030b2b",
       "status" : "broken",
       "time" : {
-        "start" : 1694611544297,
-        "stop" : 1694611544297,
+        "start" : 1694613520262,
+        "stop" : 1694613520262,
         "duration" : 0
       },
       "flaky" : false,
