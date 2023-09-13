@@ -102,7 +102,7 @@ describe('API ServeRest', function () {
         it('Deve validar um usuário com email inválido', function () {
             cy.request({
                 method: 'POST',
-                url: `${url}/usuarios`,
+                url: `${url}/usuarios `, failOnStatusCode: false,
                 body: {
                     'nome': nome,
                     'email': emailInvalido,
@@ -111,7 +111,7 @@ describe('API ServeRest', function () {
                 }
             }).then((response) => {
                 expect(response.status).to.eq(400);
-                expect(response.body.message).to.eq('email deve ser um email válido');
+                expect(response.body.email).to.eq('email deve ser um email válido');
             });
         });
 
