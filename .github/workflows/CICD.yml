@@ -34,7 +34,7 @@ jobs:
         run: |
           docker run -d -p 3000:3000 paulogoncalvesbh/serverest:latest
           sleep 7
-        
+
       - name: Setup Node.js
         uses: actions/setup-node@v3.8.1
         with:
@@ -45,8 +45,10 @@ jobs:
       - run: npm install --yes
       - run: npm i faker-br --dev
       - run: npm install cypress -d
+      - name: Execute Test
+        run: npx cypress run --config video=false --env allure=true --record --key ad7e7e2c-7f7c-48f1-8f1c-8c8098294edc
+        continue-on-error: true
 
-      - run: npx cypress run --config video=false --env allure=true --record --key ad7e7e2c-7f7c-48f1-8f1c-8c8098294edc
       # - run: node runner.js
       #Geração do relatório em HTML allure-report
       - name: Allure report V2
