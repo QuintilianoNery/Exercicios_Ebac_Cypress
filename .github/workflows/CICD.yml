@@ -19,7 +19,7 @@ jobs:
   # Onde quero executar o fluxo de trabalho
   build:
     # Executar em um windows-latest, ubuntu-latest
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     # Qual versão do node vai ser utilizada
     strategy:
