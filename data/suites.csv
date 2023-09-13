@@ -1,2 +1,2 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"broken","Wed Sep 13 13:18:25 GMT 2023","Wed Sep 13 13:18:25 GMT 2023","0","","cypress/e2e/GUI/testes-e2e-ebac-shop.cy.js","","","","Oops...we found an error preparing this test file: cypress/e2e/GUI/testes-e2e-ebac-shop.cy.js",""
+"broken","Wed Sep 13 13:25:44 GMT 2023","Wed Sep 13 13:25:44 GMT 2023","0","","cypress/e2e/GUI/testes-e2e-ebac-shop.cy.js","","","","Oops...we found an error preparing this test file: cypress/e2e/GUI/testes-e2e-ebac-shop.cy.js",""
