@@ -17,7 +17,7 @@ before(function () {
 describe('API ServeRest', function () {
 
     context('URI login', function () {
-        it('Deve fazer login com sucesso', function () {
+        it(' Deve fazer login com sucesso', function () {
             cy.request({
                 method: 'POST',
                 url: `${url}/login`,
